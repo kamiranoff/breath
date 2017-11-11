@@ -8,27 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		0A3582BA1FB73ECD00098AFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3582B91FB73ECD00098AFA /* AppDelegate.m */; };
-		0A3582BD1FB73ECD00098AFA /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3582BC1FB73ECD00098AFA /* FirstViewController.m */; };
-		0A3582C01FB73ECD00098AFA /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3582BF1FB73ECD00098AFA /* SecondViewController.m */; };
 		0A3582C31FB73ECD00098AFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A3582C11FB73ECD00098AFA /* Main.storyboard */; };
 		0A3582C51FB73ECD00098AFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3582C41FB73ECD00098AFA /* Assets.xcassets */; };
 		0A3582C81FB73ECD00098AFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A3582C61FB73ECD00098AFA /* LaunchScreen.storyboard */; };
 		0A3582CB1FB73ECD00098AFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3582CA1FB73ECD00098AFA /* main.m */; };
+		0A3582D31FB77A5B00098AFA /* MainPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3582D21FB77A5B00098AFA /* MainPage.m */; };
+		0A3582D51FB77CF600098AFA /* exercices.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A3582D41FB77CF500098AFA /* exercices.json */; };
+		0A3582D71FB77D2D00098AFA /* ReadJsonFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3582D61FB77D2D00098AFA /* ReadJsonFile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A3582B51FB73ECD00098AFA /* Breath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A3582B81FB73ECD00098AFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0A3582B91FB73ECD00098AFA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0A3582BB1FB73ECD00098AFA /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		0A3582BC1FB73ECD00098AFA /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		0A3582BE1FB73ECD00098AFA /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		0A3582BF1FB73ECD00098AFA /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		0A3582C21FB73ECD00098AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A3582C41FB73ECD00098AFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A3582C71FB73ECD00098AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A3582C91FB73ECD00098AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A3582CA1FB73ECD00098AFA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A3582D11FB77A5B00098AFA /* MainPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainPage.h; sourceTree = "<group>"; };
+		0A3582D21FB77A5B00098AFA /* MainPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainPage.m; sourceTree = "<group>"; };
+		0A3582D41FB77CF500098AFA /* exercices.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exercices.json; sourceTree = SOURCE_ROOT; };
+		0A3582D61FB77D2D00098AFA /* ReadJsonFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadJsonFile.m; sourceTree = "<group>"; };
+		0A3582D81FB77D3E00098AFA /* ReadJsonFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadJsonFile.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,17 +63,18 @@
 		0A3582B71FB73ECD00098AFA /* Breath */ = {
 			isa = PBXGroup;
 			children = (
+				0A3582D41FB77CF500098AFA /* exercices.json */,
 				0A3582B81FB73ECD00098AFA /* AppDelegate.h */,
 				0A3582B91FB73ECD00098AFA /* AppDelegate.m */,
-				0A3582BB1FB73ECD00098AFA /* FirstViewController.h */,
-				0A3582BC1FB73ECD00098AFA /* FirstViewController.m */,
-				0A3582BE1FB73ECD00098AFA /* SecondViewController.h */,
-				0A3582BF1FB73ECD00098AFA /* SecondViewController.m */,
 				0A3582C11FB73ECD00098AFA /* Main.storyboard */,
+				0A3582D11FB77A5B00098AFA /* MainPage.h */,
+				0A3582D21FB77A5B00098AFA /* MainPage.m */,
 				0A3582C41FB73ECD00098AFA /* Assets.xcassets */,
 				0A3582C61FB73ECD00098AFA /* LaunchScreen.storyboard */,
 				0A3582C91FB73ECD00098AFA /* Info.plist */,
 				0A3582CA1FB73ECD00098AFA /* main.m */,
+				0A3582D61FB77D2D00098AFA /* ReadJsonFile.m */,
+				0A3582D81FB77D3E00098AFA /* ReadJsonFile.h */,
 			);
 			path = Breath;
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A3582C81FB73ECD00098AFA /* LaunchScreen.storyboard in Resources */,
+				0A3582D51FB77CF600098AFA /* exercices.json in Resources */,
 				0A3582C51FB73ECD00098AFA /* Assets.xcassets in Resources */,
 				0A3582C31FB73ECD00098AFA /* Main.storyboard in Resources */,
 			);
@@ -147,10 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A3582C01FB73ECD00098AFA /* SecondViewController.m in Sources */,
 				0A3582BA1FB73ECD00098AFA /* AppDelegate.m in Sources */,
 				0A3582CB1FB73ECD00098AFA /* main.m in Sources */,
-				0A3582BD1FB73ECD00098AFA /* FirstViewController.m in Sources */,
+				0A3582D31FB77A5B00098AFA /* MainPage.m in Sources */,
+				0A3582D71FB77D2D00098AFA /* ReadJsonFile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
