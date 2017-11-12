@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Agk-rK-54h">
+                                <rect key="frame" x="16" y="145" width="343" height="502"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2Cy-a7-P7S">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="WdP-h7-Eql" customClass="CollectionViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMa-1B-bdY">
+                                                    <rect key="frame" x="29" y="40" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.97605070802531457" blue="0.94899684126876827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="0.38779338219087528" green="0.72728516342024485" blue="0.92158412933349609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="LMa-1B-bdY" firstAttribute="centerX" secondItem="WdP-h7-Eql" secondAttribute="centerX" id="YsT-Ln-CRP"/>
+                                            <constraint firstItem="LMa-1B-bdY" firstAttribute="centerY" secondItem="WdP-h7-Eql" secondAttribute="centerY" id="gyT-uB-F8A"/>
+                                        </constraints>
+                                        <size key="customSize" width="100" height="100"/>
+                                        <connections>
+                                            <outlet property="lblCellLabel" destination="LMa-1B-bdY" id="9ov-oK-6Bg"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shout at Cancer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUh-zo-89U">
+                                <rect key="frame" x="16" y="65" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Agk-rK-54h" secondAttribute="trailing" constant="16" id="5h4-sN-jyQ"/>
+                            <constraint firstItem="OUh-zo-89U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5v8-RY-CT2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OUh-zo-89U" secondAttribute="trailing" constant="16" id="LbZ-BT-u5b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Agk-rK-54h" secondAttribute="bottom" constant="20" id="V96-iz-FSY"/>
+                            <constraint firstItem="Agk-rK-54h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="125" id="r7p-Ak-PQV"/>
+                            <constraint firstItem="Agk-rK-54h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wL5-QD-mtc"/>
+                            <constraint firstItem="OUh-zo-89U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="wnS-VK-1eC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ExercicesCollectionView" destination="Agk-rK-54h" id="8DD-IQ-YNV"/>
+                        <outlet property="exercicesCollectionView" destination="Agk-rK-54h" id="9Ai-PF-xdr"/>
+                        <segue destination="ZdR-fp-PzW" kind="show" identifier="BreathingViewController" id="pGc-hc-CNM"/>
+                        <segue destination="IXn-8W-BTF" kind="show" id="dwM-AN-fxW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nPJ-CM-57X">
+            <objects>
+                <viewController id="IXn-8W-BTF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rpU-po-HQ5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Rew-Jo-pRt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qaO-j4-Lf9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1072" y="534"/>
+        </scene>
+        <!--Breathing View Controller-->
+        <scene sceneID="FRV-AE-nSU">
+            <objects>
+                <viewController storyboardIdentifier="BreathingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZdR-fp-PzW" customClass="BreathingViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="55Z-7W-h2U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YmH-Q0-Xj2">
+                                <rect key="frame" x="16" y="49" width="343" height="77"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="Tbc-x8-mXN"/>
+                                </constraints>
+                                <string key="text">Breathing Exercise. 
+There is 9 sections.
+Inhale when the screen is blue
+Exhale when the screen is red</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQb-OY-Osa">
+                                <rect key="frame" x="151" y="306" width="72" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.16213481534638507" green="0.6384877910576926" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startBreathingBtn:" destination="OsW-HS-BE3" eventType="touchUpInside" id="1oq-u7-Dwv"/>
+                                    <action selector="startBreathingBtn:" destination="ZdR-fp-PzW" eventType="touchUpInside" id="8Ly-4W-Clg"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blv-bU-fm8">
+                                <rect key="frame" x="132" y="217" width="111.5" height="233"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="200"/>
+                                <color key="textColor" red="1" green="0.96099581833207959" blue="0.9687252752292328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inhale time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ma-zh-ZBv">
+                                <rect key="frame" x="125.5" y="420" width="124" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exhale time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEu-sm-08V">
+                                <rect key="frame" x="122" y="485" width="131" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YEu-sm-08V" firstAttribute="top" secondItem="blv-bU-fm8" secondAttribute="bottom" constant="35" id="3ZL-UB-kLw"/>
+                            <constraint firstItem="YmH-Q0-Xj2" firstAttribute="top" secondItem="SDL-UQ-SMk" secondAttribute="top" constant="29" id="CXl-vX-ZSs"/>
+                            <constraint firstItem="YmH-Q0-Xj2" firstAttribute="leading" secondItem="SDL-UQ-SMk" secondAttribute="leading" constant="16" id="Gog-lq-Rrm"/>
+                            <constraint firstItem="SDL-UQ-SMk" firstAttribute="trailing" secondItem="YmH-Q0-Xj2" secondAttribute="trailing" constant="16" id="U6p-ry-dmq"/>
+                            <constraint firstItem="IQb-OY-Osa" firstAttribute="centerY" secondItem="55Z-7W-h2U" secondAttribute="centerY" id="UUw-9P-Fy7"/>
+                            <constraint firstItem="IQb-OY-Osa" firstAttribute="centerX" secondItem="55Z-7W-h2U" secondAttribute="centerX" id="czI-jN-lAK"/>
+                            <constraint firstItem="blv-bU-fm8" firstAttribute="centerY" secondItem="55Z-7W-h2U" secondAttribute="centerY" id="ep7-XJ-PeI"/>
+                            <constraint firstItem="1Ma-zh-ZBv" firstAttribute="centerX" secondItem="55Z-7W-h2U" secondAttribute="centerX" id="f6l-6g-Dc8"/>
+                            <constraint firstItem="YEu-sm-08V" firstAttribute="centerX" secondItem="55Z-7W-h2U" secondAttribute="centerX" id="fDm-pC-9gr"/>
+                            <constraint firstItem="1Ma-zh-ZBv" firstAttribute="top" secondItem="IQb-OY-Osa" secondAttribute="bottom" constant="60" id="pHX-Pq-bIn"/>
+                            <constraint firstItem="blv-bU-fm8" firstAttribute="centerX" secondItem="55Z-7W-h2U" secondAttribute="centerX" id="v1o-7o-TeD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SDL-UQ-SMk"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionTextOutlet" destination="YmH-Q0-Xj2" id="jmq-AE-1IQ"/>
+                        <outlet property="exhaleTimeLabel" destination="YEu-sm-08V" id="9ue-qJ-ydS"/>
+                        <outlet property="inhaleTimeLabel" destination="1Ma-zh-ZBv" id="12h-CY-Suv"/>
+                        <outlet property="lblNumberOutlet" destination="blv-bU-fm8" id="1SL-8G-db7"/>
+                        <outlet property="startBreathingLbl" destination="IQb-OY-Osa" id="vve-lB-nl6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rTZ-Lh-zKJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="OsW-HS-BE3" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="869.60000000000002" y="-433.13343328335833"/>
+        </scene>
+    </scenes>
+</document>

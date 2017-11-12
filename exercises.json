@@ -1,0 +1,3037 @@
+{
+	"breathing": [
+		{
+			"inhale": 2,
+			"exhale": 4
+		},
+		{
+			"inhale": 3,
+			"exhale": 6
+		},
+		{
+			"inhale": 4,
+			"exhale": 6
+		},
+		{
+			"inhale": 5,
+			"exhale": 6
+		},
+		{
+			"inhale": 6,
+			"exhale": 8
+		},
+		{
+			"inhale": 6,
+			"exhale": 10
+		},
+		{
+			"inhale": 4,
+			"exhale": 10
+		},
+		{
+			"inhale": 2,
+			"exhale": 7
+		},
+		{
+			"inhale": 1,
+			"exhale": 6
+		}
+	],
+	"steadyFlowLine": {
+		"exercise1": [
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 3
+				},
+				"exhale": {
+					"strength": 2,
+					"duration": 5
+				}
+			},
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 4
+				},
+				"exhale": {
+					"strength": 2,
+					"duration": 6
+				}
+			},
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 4
+				},
+				"exhale": {
+					"strength": 2,
+					"duration": 8
+				}
+			},
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 4
+				},
+				"exhale": {
+					"strength": 2,
+					"duration": 10
+				}
+			},
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 4
+				},
+				"exhale": {
+					"strength": 2,
+					"duration": 12
+				}
+			},
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 4
+				},
+				"exhale": {
+					"strength": 2,
+					"duration": 14
+				}
+			},
+			{
+				"inhale": {
+					"strength": 3,
+					"duration": 2
+				},
+				"exhale": {
+					"strength": 2,
+					"duration": 8
+				}
+			},
+			{
+				"inhale": {
+					"strength": 3,
+					"duration": 1
+				},
+				"exhale": {
+					"strength": 2,
+					"duration": 6
+				}
+			}
+		],
+		"exercise2": [
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 3
+				},
+				"exhale": {
+					"strength": 3,
+					"duration": 3
+				}
+			},
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 4
+				},
+				"exhale": {
+					"strength": 3,
+					"duration": 4
+				}
+			},
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 4
+				},
+				"exhale": {
+					"strength": 3,
+					"duration": 5
+				}
+			},
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 4
+				},
+				"exhale": {
+					"strength": 3,
+					"duration": 6
+				}
+			},
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 4
+				},
+				"exhale": {
+					"strength": 3,
+					"duration": 7
+				}
+			},
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 4
+				},
+				"exhale": {
+					"strength": 3,
+					"duration": 8
+				}
+			},
+			{
+				"inhale": {
+					"strength": 3,
+					"duration": 2
+				},
+				"exhale": {
+					"strength": 3,
+					"duration": 4
+				}
+			},
+			{
+				"inhale": {
+					"strength": 3,
+					"duration": 1
+				},
+				"exhale": {
+					"strength": 3,
+					"duration": 3
+				}
+			}
+		],
+		"exercise3": [
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 3
+				},
+				"exhale": {
+					"strength": 1,
+					"duration": 6
+				}
+			},
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 4
+				},
+				"exhale": {
+					"strength": 1,
+					"duration": 8
+				}
+			},
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 4
+				},
+				"exhale": {
+					"strength": 1,
+					"duration": 10
+				}
+			},
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 4
+				},
+				"exhale": {
+					"strength": 1,
+					"duration": 12
+				}
+			},
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 4
+				},
+				"exhale": {
+					"strength": 1,
+					"duration": 14
+				}
+			},
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 4
+				},
+				"exhale": {
+					"strength": 1,
+					"duration": 16
+				}
+			},
+			{
+				"inhale": {
+					"strength": 3,
+					"duration": 2
+				},
+				"exhale": {
+					"strength": 1,
+					"duration": 10
+				}
+			},
+			{
+				"inhale": {
+					"strength": 3,
+					"duration": 1
+				},
+				"exhale": {
+					"strength": 1,
+					"duration": 8
+				}
+			}
+		]
+	},
+	"steadyFlowLineWithVowels": {
+		"vowels": [
+			"E",
+			"A",
+			"I",
+			"O",
+			"U"
+		],
+		"exercise1": [
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 3
+				},
+				"exhale": {
+					"strength": 2,
+					"duration": 5
+				}
+			},
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 4
+				},
+				"exhale": {
+					"strength": 2,
+					"duration": 6
+				}
+			},
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 4
+				},
+				"exhale": {
+					"strength": 2,
+					"duration": 8
+				}
+			},
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 4
+				},
+				"exhale": {
+					"strength": 2,
+					"duration": 10
+				}
+			},
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 4
+				},
+				"exhale": {
+					"strength": 2,
+					"duration": 12
+				}
+			},
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 4
+				},
+				"exhale": {
+					"strength": 2,
+					"duration": 14
+				}
+			},
+			{
+				"inhale": {
+					"strength": 3,
+					"duration": 2
+				},
+				"exhale": {
+					"strength": 2,
+					"duration": 8
+				}
+			},
+			{
+				"inhale": {
+					"strength": 3,
+					"duration": 1
+				},
+				"exhale": {
+					"strength": 2,
+					"duration": 6
+				}
+			}
+		],
+		"exercise2": [
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 3
+				},
+				"exhale": {
+					"strength": 3,
+					"duration": 3
+				}
+			},
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 4
+				},
+				"exhale": {
+					"strength": 3,
+					"duration": 4
+				}
+			},
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 4
+				},
+				"exhale": {
+					"strength": 3,
+					"duration": 5
+				}
+			},
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 4
+				},
+				"exhale": {
+					"strength": 3,
+					"duration": 6
+				}
+			},
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 4
+				},
+				"exhale": {
+					"strength": 3,
+					"duration": 7
+				}
+			},
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 4
+				},
+				"exhale": {
+					"strength": 3,
+					"duration": 8
+				}
+			},
+			{
+				"inhale": {
+					"strength": 3,
+					"duration": 2
+				},
+				"exhale": {
+					"strength": 3,
+					"duration": 4
+				}
+			},
+			{
+				"inhale": {
+					"strength": 3,
+					"duration": 1
+				},
+				"exhale": {
+					"strength": 3,
+					"duration": 3
+				}
+			}
+		],
+		"exercise3": [
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 3
+				},
+				"exhale": {
+					"strength": 1,
+					"duration": 6
+				}
+			},
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 4
+				},
+				"exhale": {
+					"strength": 1,
+					"duration": 8
+				}
+			},
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 4
+				},
+				"exhale": {
+					"strength": 1,
+					"duration": 10
+				}
+			},
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 4
+				},
+				"exhale": {
+					"strength": 1,
+					"duration": 12
+				}
+			},
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 4
+				},
+				"exhale": {
+					"strength": 1,
+					"duration": 14
+				}
+			},
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 4
+				},
+				"exhale": {
+					"strength": 1,
+					"duration": 16
+				}
+			},
+			{
+				"inhale": {
+					"strength": 3,
+					"duration": 2
+				},
+				"exhale": {
+					"strength": 1,
+					"duration": 10
+				}
+			},
+			{
+				"inhale": {
+					"strength": 3,
+					"duration": 1
+				},
+				"exhale": {
+					"strength": 1,
+					"duration": 8
+				}
+			}
+		]
+	},
+	"decibelFeedback": [
+		{
+			"strength": [
+				1
+			]
+		},
+		{
+			"strength": [
+				4
+			]
+		},
+		{
+			"strength": [
+				6
+			]
+		},
+		{
+			"strength": [
+				8
+			]
+		},
+		{
+			"strength": [
+				1,
+				2,
+				3,
+				2,
+				1
+			]
+		},
+		{
+			"strength": [
+				1,
+				4,
+				6,
+				4,
+				1
+			]
+		},
+		{
+			"strength": [
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8
+			]
+		},
+		{
+			"strength": [
+				1,
+				2,
+				3,
+				4,
+				3,
+				2,
+				1,
+				2,
+				3
+			]
+		},
+		{
+			"strength": [
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				5,
+				4,
+				3,
+				2,
+				1
+			]
+		},
+		{
+			"strength": [
+				3,
+				4,
+				5,
+				6,
+				5,
+				4,
+				5,
+				6,
+				7
+			]
+		},
+		{
+			"strength": [
+				7,
+				6,
+				5,
+				4,
+				3,
+				2,
+				1,
+				2,
+				3
+			]
+		},
+		{
+			"strength": [
+				5,
+				4,
+				3,
+				2,
+				1,
+				2,
+				3,
+				4,
+				5
+			]
+		},
+		{
+			"strength": [
+				4,
+				3,
+				2,
+				3,
+				4,
+				5,
+				4,
+				3,
+				2,
+				3,
+				4
+			]
+		},
+		{
+			"strength": [
+				1,
+				2,
+				3,
+				4,
+				3,
+				2,
+				3,
+				4,
+				5,
+				4,
+				3,
+				6,
+				1,
+				1
+			]
+		}
+	],
+	"decibelFeedbackWithVowels": [
+		{
+			"strength": [
+				1,
+				1,
+				1,
+				1,
+				1
+			],
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U"
+			]
+		},
+		{
+			"strength": [
+				4,
+				4,
+				4,
+				4,
+				4
+			],
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U"
+			]
+		},
+		{
+			"strength": [
+				6,
+				6,
+				6,
+				6,
+				6
+			],
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U"
+			]
+		},
+		{
+			"strength": [
+				8,
+				8,
+				8,
+				8,
+				8
+			],
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U"
+			]
+		},
+		{
+			"strength": [
+				1,
+				2,
+				3,
+				2,
+				1
+			],
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U"
+			]
+		},
+		{
+			"strength": [
+				1,
+				4,
+				6,
+				4,
+				1
+			],
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U"
+			]
+		},
+		{
+			"strength": [
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8
+			],
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U",
+				"O",
+				"I"
+			]
+		},
+		{
+			"strength": [
+				1,
+				2,
+				3,
+				4,
+				3,
+				2,
+				1,
+				2,
+				3
+			],
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U",
+				"O",
+				"I",
+				"A",
+				"E"
+			]
+		},
+		{
+			"strength": [
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				5,
+				4,
+				3,
+				2,
+				1
+			],
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U",
+				"E",
+				"A",
+				"I",
+				"O",
+				"U",
+				"O"
+			]
+		},
+		{
+			"strength": [
+				3,
+				4,
+				5,
+				6,
+				5,
+				4,
+				5,
+				6,
+				7
+			],
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U",
+				"O",
+				"I",
+				"A",
+				"E"
+			]
+		},
+		{
+			"strength": [
+				7,
+				6,
+				5,
+				4,
+				3,
+				2,
+				1,
+				2,
+				3
+			],
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U",
+				"O",
+				"I",
+				"A",
+				"E"
+			]
+		},
+		{
+			"strength": [
+				5,
+				4,
+				3,
+				2,
+				1,
+				2,
+				3,
+				4,
+				5
+			],
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U",
+				"O",
+				"I",
+				"A",
+				"E"
+			]
+		},
+		{
+			"strength": [
+				4,
+				3,
+				2,
+				3,
+				4,
+				5,
+				4,
+				3,
+				2,
+				3,
+				4
+			],
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U",
+				"E",
+				"A",
+				"I",
+				"O",
+				"U",
+				"O"
+			]
+		},
+		{
+			"strength": [
+				1,
+				2,
+				3,
+				4,
+				3,
+				2,
+				3,
+				4,
+				5,
+				4,
+				3,
+				6,
+				1,
+				1,
+				1
+			],
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U",
+				"E",
+				"A",
+				"I",
+				"O",
+				"U",
+				"O",
+				"I",
+				"A",
+				"E",
+				"A"
+			]
+		}
+	],
+	"tempo": {
+		"exercise1": [
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 2,
+				"exhale": 5,
+				"interval": 1000
+			},
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 2,
+				"exhale": 7,
+				"interval": 800
+			},
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 2,
+				"exhale": 9,
+				"interval": 650
+			},
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 2,
+				"exhale": 12,
+				"interval": 500
+			},
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 2,
+				"exhale": 15,
+				"interval": 250
+			},
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 2,
+				"exhale": 20,
+				"interval": 150
+			}
+		],
+		"exercise2": [
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 3,
+				"exhale": 3,
+				"interval": 1000
+			},
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 3,
+				"exhale": 5,
+				"interval": 800
+			},
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 3,
+				"exhale": 7,
+				"interval": 650
+			},
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 3,
+				"exhale": 9,
+				"interval": 500
+			},
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 3,
+				"exhale": 12,
+				"interval": 250
+			},
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 3,
+				"exhale": 15,
+				"interval": 150
+			}
+		],
+		"exercise3": [
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 1,
+				"exhale": 6,
+				"interval": 1000
+			},
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 1,
+				"exhale": 9,
+				"interval": 800
+			},
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 1,
+				"exhale": 11,
+				"interval": 650
+			},
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 1,
+				"exhale": 13,
+				"interval": 500
+			},
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 1,
+				"exhale": 17,
+				"interval": 250
+			},
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 1,
+				"exhale": 22,
+				"interval": 150
+			}
+		]
+	},
+	"tempoWithVowels": {
+		"exercise1": [
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 2,
+				"exhale": 5,
+				"interval": 1000,
+				"vowels": [
+					"E",
+					"A",
+					"I",
+					"O",
+					"U"
+				]
+			},
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 2,
+				"exhale": 7,
+				"interval": 800,
+				"vowels": [
+					"E",
+					"A",
+					"I",
+					"O",
+					"U",
+					"E",
+					"A"
+				]
+			},
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 2,
+				"exhale": 9,
+				"interval": 650,
+				"vowels": [
+					"E",
+					"A",
+					"I",
+					"O",
+					"U",
+					"E",
+					"A",
+					"I",
+					"O"
+				]
+			},
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 2,
+				"exhale": 12,
+				"interval": 500,
+				"vowels": [
+					"E",
+					"A",
+					"I",
+					"O",
+					"U",
+					"E",
+					"A",
+					"I",
+					"O",
+					"U",
+					"O",
+					"I"
+				]
+			},
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 2,
+				"exhale": 15,
+				"interval": 250,
+				"vowels": [
+					"E",
+					"A",
+					"I",
+					"O",
+					"U",
+					"E",
+					"A",
+					"I",
+					"O",
+					"U",
+					"O",
+					"I",
+					"A",
+					"E",
+					"U"
+				]
+			},
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 2,
+				"exhale": 20,
+				"interval": 150,
+				"vowels": [
+					"E",
+					"A",
+					"I",
+					"O",
+					"U",
+					"E",
+					"A",
+					"I",
+					"O",
+					"U",
+					"O",
+					"I",
+					"A",
+					"E",
+					"U",
+					"I",
+					"O",
+					"E",
+					"A",
+					"I"
+				]
+			}
+		],
+		"exercise2": [
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 3,
+				"exhale": 3,
+				"interval": 1000,
+				"vowels": [
+					"E",
+					"A",
+					"I"
+				]
+			},
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 3,
+				"exhale": 5,
+				"interval": 800,
+				"vowels": [
+					"E",
+					"A",
+					"I",
+					"O",
+					"U"
+				]
+			},
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 3,
+				"exhale": 7,
+				"interval": 650,
+				"vowels": [
+					"E",
+					"A",
+					"I",
+					"O",
+					"U",
+					"E",
+					"A"
+				]
+			},
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 3,
+				"exhale": 9,
+				"interval": 500,
+				"vowels": [
+					"E",
+					"A",
+					"I",
+					"O",
+					"U",
+					"E",
+					"A",
+					"I",
+					"O"
+				]
+			},
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 3,
+				"exhale": 12,
+				"interval": 250,
+				"vowels": [
+					"E",
+					"A",
+					"I",
+					"O",
+					"U",
+					"E",
+					"A",
+					"I",
+					"O",
+					"U",
+					"O",
+					"I"
+				]
+			},
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 3,
+				"exhale": 15,
+				"interval": 150,
+				"vowels": [
+					"E",
+					"A",
+					"I",
+					"O",
+					"U",
+					"E",
+					"A",
+					"I",
+					"O",
+					"U",
+					"O",
+					"I",
+					"A",
+					"E",
+					"U"
+				]
+			}
+		],
+		"exercise3": [
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 1,
+				"exhale": 6,
+				"interval": 1000,
+				"vowels": [
+					"E",
+					"A",
+					"I",
+					"O",
+					"U",
+					"E"
+				]
+			},
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 1,
+				"exhale": 9,
+				"interval": 800,
+				"vowels": [
+					"E",
+					"A",
+					"I",
+					"O",
+					"U",
+					"E",
+					"A",
+					"I",
+					"O"
+				]
+			},
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 1,
+				"exhale": 11,
+				"interval": 650,
+				"vowels": [
+					"E",
+					"A",
+					"I",
+					"O",
+					"U",
+					"E",
+					"A",
+					"I",
+					"O",
+					"U",
+					"O"
+				]
+			},
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 1,
+				"exhale": 13,
+				"interval": 500,
+				"vowels": [
+					"E",
+					"A",
+					"I",
+					"O",
+					"U",
+					"E",
+					"A",
+					"I",
+					"O",
+					"U",
+					"O",
+					"I",
+					"A"
+				]
+			},
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 1,
+				"exhale": 17,
+				"interval": 250,
+				"vowels": [
+					"E",
+					"A",
+					"I",
+					"O",
+					"U",
+					"E",
+					"A",
+					"I",
+					"O",
+					"U",
+					"O",
+					"I",
+					"A",
+					"E",
+					"U",
+					"I",
+					"O"
+				]
+			},
+			{
+				"inhale": {
+					"length": 2,
+					"strength": 2
+				},
+				"strength": 1,
+				"exhale": 22,
+				"interval": 150,
+				"vowels": [
+					"E",
+					"A",
+					"I",
+					"O",
+					"U",
+					"E",
+					"A",
+					"I",
+					"O",
+					"U",
+					"O",
+					"I",
+					"A",
+					"E",
+					"U",
+					"I",
+					"O",
+					"E",
+					"A",
+					"I",
+					"O",
+					"U"
+				]
+			}
+		]
+	},
+	"tempoDecibel": [
+		{
+			"inhale": {
+				"length": 2,
+				"strength": 2
+			},
+			"strength": [
+				1,
+				4,
+				6,
+				4,
+				1
+			],
+			"interval": 1000
+		},
+		{
+			"inhale": {
+				"length": 2,
+				"strength": 2
+			},
+			"strength": [
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8
+			],
+			"interval": 800
+		},
+		{
+			"inhale": {
+				"length": 2,
+				"strength": 2
+			},
+			"strength": [
+				1,
+				2,
+				3,
+				4,
+				3,
+				2,
+				1,
+				2,
+				3
+			],
+			"interval": 650
+		},
+		{
+			"inhale": {
+				"length": 2,
+				"strength": 2
+			},
+			"strength": [
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				5,
+				4,
+				3,
+				2,
+				1
+			],
+			"interval": 500
+		},
+		{
+			"inhale": {
+				"length": 2,
+				"strength": 2
+			},
+			"strength": [
+				1,
+				2,
+				3,
+				2,
+				1,
+				2,
+				3,
+				2,
+				1,
+				2,
+				3,
+				4,
+				5
+			],
+			"interval": 250
+		},
+		{
+			"inhale": {
+				"length": 2,
+				"strength": 2
+			},
+			"strength": [
+				1,
+				2,
+				3,
+				2,
+				1,
+				2,
+				3,
+				2,
+				1,
+				2,
+				3,
+				2,
+				1,
+				2,
+				3,
+				2,
+				1,
+				2,
+				3
+			],
+			"interval": 150
+		}
+	],
+	"tempoDecibelWithVowels": [
+		{
+			"inhale": {
+				"length": 2,
+				
+				"strength": 2
+				
+			},
+			"strength": [
+				1,
+				4,
+				6,
+				4,
+				1
+			],
+			"interval": 1000,
+			
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U"
+			]
+		},
+		{
+			"inhale": {
+				"length": 2,
+				"strength": 2
+			},
+			"strength": [
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8
+			],
+			"interval": 800,
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U",
+				"E",
+				"A",
+				"I"
+			]
+		},
+		{
+			"inhale": {
+				"length": 2,
+				"strength": 2
+			},
+			"strength": [
+				1,
+				2,
+				3,
+				4,
+				3,
+				2,
+				1,
+				2,
+				3
+			],
+			"interval": 650,
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U",
+				"E",
+				"A",
+				"I",
+				"O"
+			]
+		},
+		{
+			"inhale": {
+				"length": 2,
+				"strength": 2
+			},
+			"strength": [
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				5,
+				4,
+				3,
+				2,
+				1
+			],
+			"interval": 500,
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U",
+				"E",
+				"A",
+				"I",
+				"O",
+				"U",
+				"O"
+			]
+		},
+		{
+			"inhale": {
+				"length": 2,
+				"strength": 2
+			},
+			"strength": [
+				1,
+				2,
+				3,
+				2,
+				1,
+				2,
+				3,
+				2,
+				1,
+				2,
+				3,
+				4,
+				5
+			],
+			"interval": 250,
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U",
+				"E",
+				"A",
+				"I",
+				"O",
+				"U",
+				"O",
+				"I",
+				"A"
+			]
+		},
+		{
+			"inhale": {
+				"length": 2,
+				"strength": 2
+			},
+			"strength": [
+				1,
+				2,
+				3,
+				2,
+				1,
+				2,
+				3,
+				2,
+				1,
+				2,
+				3,
+				2,
+				1,
+				2,
+				3,
+				2,
+				1,
+				2,
+				3
+			],
+			"interval": 150,
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U",
+				"E",
+				"A",
+				"I",
+				"O",
+				"U",
+				"O",
+				"I",
+				"A",
+				"E",
+				"U",
+				"I",
+				"O",
+				"E",
+				"A"
+			]
+		}
+	],
+	"vowels": {
+		"exercise1": [
+			{
+				"inhale": 2,
+				
+				"vowel": "E",
+				"exhale": 4
+				
+			},
+			{
+				"inhale": 3,
+				"vowel": "E",
+				"exhale": 6
+			},
+			{
+				"inhale": 4,
+				"vowel": "E",
+				"exhale": 6
+			},
+			{
+				"inhale": 5,
+				"vowel": "E",
+				"exhale": 6
+			},
+			{
+				"inhale": 6,
+				"vowel": "E",
+				"exhale": 8
+			},
+			{
+				"inhale": 6,
+				"vowel": "E",
+				"exhale": 10
+			},
+			{
+				"inhale": 4,
+				"vowel": "E",
+				"exhale": 10
+			},
+			{
+				"inhale": 2,
+				"vowel": "E",
+				"exhale": 7
+			},
+			{
+				"inhale": 1,
+				"vowel": "E",
+				"exhale": 6
+			}
+		],
+		"exercise2": [
+			{
+				"inhale": 2,
+				"vowel": "A",
+				"exhale": 4
+			},
+			{
+				"inhale": 3,
+				"vowel": "A",
+				"exhale": 6
+			},
+			{
+				"inhale": 4,
+				"vowel": "A",
+				"exhale": 6
+			},
+			{
+				"inhale": 5,
+				"vowel": "A",
+				"exhale": 6
+			},
+			{
+				"inhale": 6,
+				"vowel": "A",
+				"exhale": 8
+			},
+			{
+				"inhale": 6,
+				"vowel": "A",
+				"exhale": 10
+			},
+			{
+				"inhale": 4,
+				"vowel": "A",
+				"exhale": 10
+			},
+			{
+				"inhale": 2,
+				"vowel": "A",
+				"exhale": 7
+			},
+			{
+				"inhale": 1,
+				"vowel": "A",
+				"exhale": 6
+			}
+		],
+		"exercise3": [
+			{
+				"inhale": 2,
+				"vowel": "I",
+				"exhale": 4
+			},
+			{
+				"inhale": 3,
+				"vowel": "I",
+				"exhale": 6
+			},
+			{
+				"inhale": 4,
+				"vowel": "I",
+				"exhale": 6
+			},
+			{
+				"inhale": 5,
+				"vowel": "I",
+				"exhale": 6
+			},
+			{
+				"inhale": 6,
+				"vowel": "I",
+				"exhale": 8
+			},
+			{
+				"inhale": 6,
+				"vowel": "I",
+				"exhale": 10
+			},
+			{
+				"inhale": 4,
+				"vowel": "I",
+				"exhale": 10
+			},
+			{
+				"inhale": 2,
+				"vowel": "I",
+				"exhale": 7
+			},
+			{
+				"inhale": 1,
+				"vowel": "I",
+				"exhale": 6
+			}
+		],
+		"exercise4": [
+			{
+				"inhale": 2,
+				"vowel": "O",
+				"exhale": 4
+			},
+			{
+				"inhale": 3,
+				"vowel": "O",
+				"exhale": 6
+			},
+			{
+				"inhale": 4,
+				"vowel": "O",
+				"exhale": 6
+			},
+			{
+				"inhale": 5,
+				"vowel": "O",
+				"exhale": 6
+			},
+			{
+				"inhale": 6,
+				"vowel": "O",
+				"exhale": 8
+			},
+			{
+				"inhale": 6,
+				"vowel": "O",
+				"exhale": 10
+			},
+			{
+				"inhale": 4,
+				"vowel": "O",
+				"exhale": 10
+			},
+			{
+				"inhale": 2,
+				"vowel": "O",
+				"exhale": 7
+			},
+			{
+				"inhale": 1,
+				"vowel": "O",
+				"exhale": 6
+			}
+		],
+		"exercise5": [
+			{
+				"inhale": 2,
+				"vowel": "U",
+				"exhale": 4
+			},
+			{
+				"inhale": 3,
+				"vowel": "U",
+				"exhale": 6
+			},
+			{
+				"inhale": 4,
+				"vowel": "U",
+				"exhale": 6
+			},
+			{
+				"inhale": 5,
+				"vowel": "U",
+				"exhale": 6
+			},
+			{
+				"inhale": 6,
+				"vowel": "U",
+				"exhale": 8
+			},
+			{
+				"inhale": 6,
+				"vowel": "U",
+				"exhale": 10
+			},
+			{
+				"inhale": 4,
+				"vowel": "U",
+				"exhale": 10
+			},
+			{
+				"inhale": 2,
+				"vowel": "U",
+				"exhale": 7
+			},
+			{
+				"inhale": 1,
+				"vowel": "U",
+				"exhale": 6
+			}
+		]
+	},
+	"vowelsWithColors": {
+		"exercise1": [
+			{
+				"inhale": 2,
+				
+				"vowel": "E",
+				"exhale": 3,
+				"strength": 2,
+				"pitchColor": [
+					"green",
+					"green",
+					"green"
+				]
+				
+			},
+			{
+				"inhale": 3,
+				"vowel": "E",
+				"exhale": 3,
+				"strength": 2,
+				"pitchColor": [
+					"yellow",
+					"yellow",
+					"yellow"
+				]
+			},
+			{
+				"inhale": 4,
+				"vowel": "E",
+				"exhale": 3,
+				"strength": 2,
+				"pitchColor": [
+					"blue",
+					"blue",
+					"blue"
+				]
+			},
+			{
+				"inhale": 5,
+				"vowel": "E",
+				"exhale": 3,
+				"strength": 2,
+				"pitchColor": [
+					"pink",
+					"pink",
+					"pink"
+				]
+			},
+			{
+				"inhale": 6,
+				"vowel": "E",
+				"exhale": 3,
+				"strength": 2,
+				"pitchColor": [
+					"green",
+					"yellow",
+					"pink"
+				]
+			},
+			{
+				"inhale": 6,
+				"vowel": "E",
+				"exhale": 3,
+				"strength": 2,
+				"pitchColor": [
+					"green",
+					"blue",
+					"purple"
+				]
+			},
+			{
+				"inhale": 4,
+				"vowel": "E",
+				"exhale": 3,
+				"strength": 2,
+				"pitchColor": [
+					"green",
+					"blue",
+					"yellow"
+				]
+			},
+			{
+				"inhale": 2,
+				"vowel": "E",
+				"exhale": 3,
+				"strength": 2,
+				"pitchColor": [
+					"purple",
+					"blue",
+					"green"
+				]
+			},
+			{
+				"inhale": 1,
+				"vowel": "E",
+				"exhale": 3,
+				"strength": 2,
+				"pitchColor": [
+					"yellow",
+					"pink",
+					"red"
+				]
+			},
+			{
+				"inhale": 1,
+				"vowel": "E",
+				"exhale": 4,
+				"strength": 2,
+				"pitchColor": [
+					"pink",
+					"yellow",
+					"green",
+					"blue"
+				]
+			},
+			{
+				"inhale": 1,
+				"vowel": "E",
+				"exhale": 4,
+				"strength": 2,
+				"pitchColor": [
+					"yellow",
+					"green",
+					"blue",
+					"purple"
+				]
+			},
+			{
+				"inhale": 1,
+				"vowel": "E",
+				"exhale": 4,
+				"strength": 2,
+				"pitchColor": [
+					"green",
+					"blue",
+					"purple",
+					"lila"
+				]
+			},
+			{
+				"inhale": 1,
+				"vowel": "E",
+				"exhale": 4,
+				"strength": 2,
+				"pitchColor": [
+					"purple",
+					"green",
+					"pink",
+					"green"
+				]
+			}
+		],
+		"exercise2": [
+			{
+				"inhale": 2,
+				
+				"vowel": "E",
+				"exhale": 3,
+				"strength": 3,
+				"pitchColor": [
+					"green",
+					"green",
+					"green"
+				]
+				
+			},
+			{
+				"inhale": 3,
+				"vowel": "E",
+				"exhale": 3,
+				"strength": 3,
+				"pitchColor": [
+					"yellow",
+					"yellow",
+					"yellow"
+				]
+			},
+			{
+				"inhale": 4,
+				"vowel": "E",
+				"exhale": 3,
+				"strength": 3,
+				"pitchColor": [
+					"blue",
+					"blue",
+					"blue"
+				]
+			},
+			{
+				"inhale": 5,
+				"vowel": "E",
+				"exhale": 3,
+				"strength": 3,
+				"pitchColor": [
+					"pink",
+					"pink",
+					"pink"
+				]
+			},
+			{
+				"inhale": 6,
+				"vowel": "E",
+				"exhale": 3,
+				"strength": 3,
+				"pitchColor": [
+					"green",
+					"yellow",
+					"pink"
+				]
+			},
+			{
+				"inhale": 6,
+				"vowel": "E",
+				"exhale": 3,
+				"strength": 3,
+				"pitchColor": [
+					"green",
+					"blue",
+					"purple"
+				]
+			},
+			{
+				"inhale": 4,
+				"vowel": "E",
+				"exhale": 3,
+				"strength": 3,
+				"pitchColor": [
+					"green",
+					"blue",
+					"yellow"
+				]
+			},
+			{
+				"inhale": 2,
+				"vowel": "E",
+				"exhale": 3,
+				"strength": 3,
+				"pitchColor": [
+					"purple",
+					"blue",
+					"green"
+				]
+			},
+			{
+				"inhale": 1,
+				"vowel": "E",
+				"exhale": 3,
+				"strength": 3,
+				"pitchColor": [
+					"yellow",
+					"pink",
+					"red"
+				]
+			},
+			{
+				"inhale": 1,
+				"vowel": "E",
+				"exhale": 4,
+				"strength": 3,
+				"pitchColor": [
+					"pink",
+					"yellow",
+					"green",
+					"blue"
+				]
+			},
+			{
+				"inhale": 1,
+				"vowel": "E",
+				"exhale": 4,
+				"strength": 3,
+				"pitchColor": [
+					"yellow",
+					"green",
+					"blue",
+					"purple"
+				]
+			},
+			{
+				"inhale": 1,
+				"vowel": "E",
+				"exhale": 4,
+				"strength": 3,
+				"pitchColor": [
+					"green",
+					"blue",
+					"purple",
+					"lila"
+				]
+			},
+			{
+				"inhale": 1,
+				"vowel": "E",
+				"exhale": 4,
+				"strength": 3,
+				"pitchColor": [
+					"purple",
+					"green",
+					"pink",
+					"green"
+				]
+			}
+		],
+		"exercise3": [
+			{
+				"inhale": 2,
+				
+				"vowel": "E",
+				"exhale": 3,
+				"strength": 1,
+				"pitchColor": [
+					"green",
+					"green",
+					"green"
+				]
+				
+			},
+			{
+				"inhale": 3,
+				"vowel": "E",
+				"exhale": 3,
+				"strength": 1,
+				"pitchColor": [
+					"yellow",
+					"yellow",
+					"yellow"
+				]
+			},
+			{
+				"inhale": 4,
+				"vowel": "E",
+				"exhale": 3,
+				"strength": 1,
+				"pitchColor": [
+					"blue",
+					"blue",
+					"blue"
+				]
+			},
+			{
+				"inhale": 5,
+				"vowel": "E",
+				"exhale": 3,
+				"strength": 1,
+				"pitchColor": [
+					"pink",
+					"pink",
+					"pink"
+				]
+			},
+			{
+				"inhale": 6,
+				"vowel": "E",
+				"exhale": 3,
+				"strength": 1,
+				"pitchColor": [
+					"green",
+					"yellow",
+					"pink"
+				]
+			},
+			{
+				"inhale": 6,
+				"vowel": "E",
+				"exhale": 3,
+				"strength": 1,
+				"pitchColor": [
+					"green",
+					"blue",
+					"purple"
+				]
+			},
+			{
+				"inhale": 4,
+				"vowel": "E",
+				"exhale": 3,
+				"strength": 1,
+				"pitchColor": [
+					"green",
+					"blue",
+					"yellow"
+				]
+			},
+			{
+				"inhale": 2,
+				"vowel": "E",
+				"exhale": 3,
+				"strength": 1,
+				"pitchColor": [
+					"purple",
+					"blue",
+					"green"
+				]
+			},
+			{
+				"inhale": 1,
+				"vowel": "E",
+				"exhale": 3,
+				"strength": 1,
+				"pitchColor": [
+					"yellow",
+					"pink",
+					"red"
+				]
+			},
+			{
+				"inhale": 1,
+				"vowel": "E",
+				"exhale": 4,
+				"strength": 1,
+				"pitchColor": [
+					"pink",
+					"yellow",
+					"green",
+					"blue"
+				]
+			},
+			{
+				"inhale": 1,
+				"vowel": "E",
+				"exhale": 4,
+				"strength": 1,
+				"pitchColor": [
+					"yellow",
+					"green",
+					"blue",
+					"purple"
+				]
+			},
+			{
+				"inhale": 1,
+				"vowel": "E",
+				"exhale": 4,
+				"strength": 1,
+				"pitchColor": [
+					"green",
+					"blue",
+					"purple",
+					"lila"
+				]
+			},
+			{
+				"inhale": 1,
+				"vowel": "E",
+				"exhale": 4,
+				"strength": 1,
+				"pitchColor": [
+					"purple",
+					"green",
+					"pink",
+					"green"
+				]
+			}
+		]
+	},
+	"decibelFeedbackWithVowelsAndColors": [
+		{
+			"strength": [
+				1,
+				1,
+				1,
+				1,
+				1
+			],
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U"
+			],
+			"colors": [
+				"green",
+				"yellow",
+				"pink",
+				"yellow",
+				"pink"
+			]
+		},
+		{
+			"strength": [
+				4,
+				4,
+				4,
+				4,
+				4
+			],
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U"
+			],
+			"colors": [
+				"pink",
+				"yellow",
+				"pink",
+				"yellow",
+				"green"
+			]
+		},
+		{
+			"strength": [
+				6,
+				6,
+				6,
+				6,
+				6
+			],
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U"
+			],
+			"colors": [
+				"pink",
+				"yellow",
+				"green",
+				"yellow",
+				"green"
+			]
+		},
+		{
+			"strength": [
+				8,
+				8,
+				8,
+				8,
+				8
+			],
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U"
+			],
+			"colors": [
+				"red",
+				"pink",
+				"yellow",
+				"green",
+				"blue"
+			]
+		},
+		{
+			"strength": [
+				1,
+				2,
+				3,
+				2,
+				1
+			],
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U"
+			],
+			"colors": [
+				"purple",
+				"blue",
+				"green",
+				"blue",
+				"purple"
+			]
+		},
+		{
+			"strength": [
+				1,
+				4,
+				6,
+				4,
+				1
+			],
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U"
+			],
+			"colors": [
+				"purple",
+				"green",
+				"yellow",
+				"green",
+				"purple"
+			]
+		},
+		{
+			"strength": [
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8
+			],
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U",
+				"O",
+				"I"
+			],
+			"colors": [
+				"lila",
+				"purple",
+				"blue",
+				"green",
+				"yellow",
+				"pink",
+				"red",
+				"yellow"
+			]
+		},
+		{
+			"strength": [
+				1,
+				2,
+				3,
+				4,
+				3,
+				2,
+				1,
+				2,
+				3
+			],
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U",
+				"O",
+				"I",
+				"A",
+				"E"
+			],
+			"colors": [
+				"blue",
+				"green",
+				"yellow",
+				"pink",
+				"yellow",
+				"green",
+				"blue",
+				"green",
+				"blue"
+			]
+		},
+		{
+			"strength": [
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				5,
+				4,
+				3,
+				2,
+				1
+			],
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U",
+				"E",
+				"A",
+				"I",
+				"O",
+				"U",
+				"O"
+			],
+			"colors": [
+				"lila",
+				"purple",
+				"blue",
+				"green",
+				"yellow",
+				"pink",
+				"yellow",
+				"green",
+				"blue",
+				"purple",
+				"lila"
+			]
+		},
+		{
+			"strength": [
+				3,
+				4,
+				5,
+				6,
+				5,
+				4,
+				5,
+				6,
+				7
+			],
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U",
+				"O",
+				"I",
+				"A",
+				"E"
+			],
+			"colors": [
+				"blue",
+				"green",
+				"yellow",
+				"pink",
+				"yellow",
+				"green",
+				"yellow",
+				"pink",
+				"pink"
+			]
+		},
+		{
+			"strength": [
+				7,
+				6,
+				5,
+				4,
+				3,
+				2,
+				1,
+				2,
+				3
+			],
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U",
+				"O",
+				"I",
+				"A",
+				"E"
+			],
+			"colors": [
+				"pink",
+				"yellow",
+				"green",
+				"blue",
+				"purple",
+				"lila",
+				"blue",
+				"green",
+				"blue"
+			]
+		},
+		{
+			"strength": [
+				5,
+				4,
+				3,
+				2,
+				1,
+				2,
+				3,
+				4,
+				5
+			],
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U",
+				"O",
+				"I",
+				"A",
+				"E"
+			],
+			"colors": [
+				"yellow",
+				"green",
+				"blue",
+				"purple",
+				"blue",
+				"purple",
+				"blue",
+				"green",
+				"yellow"
+			]
+		},
+		{
+			"strength": [
+				4,
+				3,
+				2,
+				3,
+				4,
+				5,
+				4,
+				3,
+				2,
+				3,
+				4
+			],
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U",
+				"E",
+				"A",
+				"I",
+				"O",
+				"U",
+				"O"
+			],
+			"colors": [
+				"yellow",
+				"green",
+				"blue",
+				"green",
+				"yellow",
+				"pink",
+				"yellow",
+				"green",
+				"blue",
+				"green",
+				"yellow"
+			]
+		},
+		{
+			"strength": [
+				1,
+				2,
+				3,
+				4,
+				3,
+				2,
+				3,
+				4,
+				5,
+				4,
+				3,
+				6,
+				1,
+				1,
+				1
+			],
+			"vowels": [
+				"E",
+				"A",
+				"I",
+				"O",
+				"U",
+				"E",
+				"A",
+				"I",
+				"O",
+				"U",
+				"O",
+				"I",
+				"A",
+				"E",
+				"A"
+			],
+			"colors": [
+				"lila",
+				"purple",
+				"blue",
+				"green",
+				"blue",
+				"purple",
+				"blue",
+				"green",
+				"yellow",
+				"green",
+				"blue",
+				"pink",
+				"green",
+				"blue",
+				"green"
+			]
+		}
+	]
+}
