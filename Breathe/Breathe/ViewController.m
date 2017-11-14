@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 #import "CollectionViewCell.h"
-
+#import "BreathingViewController.h"
+#import "SteadyFlowLineViewController.h"
 
 @interface ViewController () {
   NSArray * exercises;
@@ -58,9 +59,30 @@ static NSString * const reuseIdentifier = @"Cell";
 -(void) collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
   
   NSString * exercise = exercises[indexPath.row];
-    
-  [self performSegueWithIdentifier:@"BreathingViewController" sender:self];
   
+  if([exercise isEqualToString:@"Breathing"]) {
+    [self performSegueWithIdentifier:@"Breathing" sender:nil];
+  } else if([exercise isEqualToString:@"steadyFlowLine"]){
+    [self performSegueWithIdentifier:@"SteadyFlowLine" sender:nil];
+  }else {
+    [self performSegueWithIdentifier:@"Breathing" sender:nil];
+
+  }
+}
+
+// This will get called too before the view appears
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+  
+    BreathingViewController *breathingVC = [segue destinationViewController];
+    SteadyFlowLineViewController *steadyVc = [segue destinationViewController];
+  
+  if ([[segue identifier] isEqualToString:@"Breathing"]) {
+    // Get destination view
+    breathingVC.exerciceTitle = @"Breathing";
+  }else if([[segue identifier] isEqualToString:@"SteadyFlowLine"]) {
+    steadyVc.exerciceTitle = @"SteadyFlowLine";
+  }
 }
 
 @end

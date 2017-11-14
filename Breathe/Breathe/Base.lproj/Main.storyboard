@@ -82,28 +82,95 @@
                     <connections>
                         <outlet property="ExercicesCollectionView" destination="Agk-rK-54h" id="8DD-IQ-YNV"/>
                         <outlet property="exercicesCollectionView" destination="Agk-rK-54h" id="9Ai-PF-xdr"/>
-                        <segue destination="ZdR-fp-PzW" kind="show" identifier="BreathingViewController" id="pGc-hc-CNM"/>
-                        <segue destination="IXn-8W-BTF" kind="show" id="dwM-AN-fxW"/>
+                        <segue destination="ZdR-fp-PzW" kind="show" identifier="Breathing" id="pGc-hc-CNM"/>
+                        <segue destination="IXn-8W-BTF" kind="show" identifier="SteadyFlowLine" id="dwM-AN-fxW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
         </scene>
-        <!--View Controller-->
+        <!--Steady Flow Line View Controller-->
         <scene sceneID="nPJ-CM-57X">
             <objects>
-                <viewController id="IXn-8W-BTF" sceneMemberID="viewController">
+                <viewController id="IXn-8W-BTF" customClass="SteadyFlowLineViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rpU-po-HQ5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sqm-qC-krQ">
+                                <rect key="frame" x="16" y="95" width="343" height="140"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="Aek-tu-rr7"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="140" id="Plv-sK-ETf"/>
+                                </constraints>
+                                <string key="text">Steady Line Exercise. 
+There is 9 sections.
+Inhale for 2 seconds
+exhale while the line is growing. If the line thin exhale lightly if the line is medium exhale medium if the line is heavy exhale heavy
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RP3-dO-raP">
+                                <rect key="frame" x="132" y="217" width="111.5" height="233"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="200"/>
+                                <color key="textColor" red="1" green="0.96099581830000003" blue="0.96872527519999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inhale time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJE-UB-jM4">
+                                <rect key="frame" x="125" y="465" width="124" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2k-es-axn">
+                                <rect key="frame" x="151" y="306.5" width="72" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.16213481530000001" green="0.63848779109999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startBreathingBtn:" destination="ZdR-fp-PzW" eventType="touchUpInside" id="9HD-Vh-Bbn"/>
+                                    <action selector="startBreathingBtn:" destination="IXn-8W-BTF" eventType="touchUpInside" id="ODS-hE-iap"/>
+                                    <action selector="startBreathingBtn:" destination="OsW-HS-BE3" eventType="touchUpInside" id="UbT-0i-67L"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exhale time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFh-1q-YK5">
+                                <rect key="frame" x="122" y="511" width="131" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="c2k-es-axn" firstAttribute="centerY" secondItem="rpU-po-HQ5" secondAttribute="centerY" id="1pj-12-Dvd"/>
+                            <constraint firstItem="pFh-1q-YK5" firstAttribute="top" secondItem="iJE-UB-jM4" secondAttribute="bottom" constant="16" id="6cA-ZX-mFh"/>
+                            <constraint firstItem="iJE-UB-jM4" firstAttribute="top" secondItem="RP3-dO-raP" secondAttribute="bottom" constant="15" id="ATq-dv-9TQ"/>
+                            <constraint firstItem="iJE-UB-jM4" firstAttribute="centerX" secondItem="rpU-po-HQ5" secondAttribute="centerX" id="B0C-V8-EaR"/>
+                            <constraint firstItem="c2k-es-axn" firstAttribute="centerX" secondItem="rpU-po-HQ5" secondAttribute="centerX" id="EdY-Jq-hRx"/>
+                            <constraint firstItem="sqm-qC-krQ" firstAttribute="top" secondItem="Rew-Jo-pRt" secondAttribute="top" constant="75" id="JMy-7F-laU"/>
+                            <constraint firstItem="pFh-1q-YK5" firstAttribute="centerX" secondItem="rpU-po-HQ5" secondAttribute="centerX" id="OjH-qG-tda"/>
+                            <constraint firstItem="RP3-dO-raP" firstAttribute="centerX" secondItem="rpU-po-HQ5" secondAttribute="centerX" id="U0s-Se-LQM"/>
+                            <constraint firstItem="RP3-dO-raP" firstAttribute="centerY" secondItem="rpU-po-HQ5" secondAttribute="centerY" id="W2K-Se-JWa"/>
+                            <constraint firstItem="sqm-qC-krQ" firstAttribute="leading" secondItem="Rew-Jo-pRt" secondAttribute="leading" constant="16" id="WGV-Mc-Jjc"/>
+                            <constraint firstItem="Rew-Jo-pRt" firstAttribute="trailing" secondItem="sqm-qC-krQ" secondAttribute="trailing" constant="16" id="wew-Sl-8Wo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Rew-Jo-pRt"/>
                     </view>
+                    <connections>
+                        <outlet property="descriptionTextOutlet" destination="sqm-qC-krQ" id="O5B-FO-ZWY"/>
+                        <outlet property="exhaleTimeLabel" destination="pFh-1q-YK5" id="tDt-3q-A2e"/>
+                        <outlet property="inhaleTimeLabel" destination="iJE-UB-jM4" id="y2a-WA-i7q"/>
+                        <outlet property="lblNumberOutlet" destination="RP3-dO-raP" id="uPd-Pd-5Le"/>
+                        <outlet property="startBreathingLbl" destination="c2k-es-axn" id="TfW-09-tQ2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qaO-j4-Lf9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1072" y="534"/>
+            <point key="canvasLocation" x="1071.2" y="533.88305847076469"/>
         </scene>
         <!--Breathing View Controller-->
         <scene sceneID="FRV-AE-nSU">

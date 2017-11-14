@@ -11,6 +11,7 @@
 		0A4F5BC71FB8B1230089B0CC /* BreathingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F5BC61FB8B1230089B0CC /* BreathingViewController.m */; };
 		0A4F5BC91FB8CA780089B0CC /* JSONHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F5BC81FB8CA780089B0CC /* JSONHelpers.m */; };
 		0A4F5BCC1FB8CB270089B0CC /* exercises.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A4F5BCB1FB8CB270089B0CC /* exercises.json */; };
+		0A4F5BCF1FBA50B40089B0CC /* SteadyFlowLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F5BCE1FBA50B40089B0CC /* SteadyFlowLineViewController.m */; };
 		0AA5966A1FB896DC001D4D25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA596691FB896DC001D4D25 /* AppDelegate.m */; };
 		0AA5966D1FB896DC001D4D25 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA5966C1FB896DC001D4D25 /* ViewController.m */; };
 		0AA596701FB896DC001D4D25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA5966E1FB896DC001D4D25 /* Main.storyboard */; };
@@ -46,6 +47,8 @@
 		0A4F5BC81FB8CA780089B0CC /* JSONHelpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONHelpers.m; sourceTree = "<group>"; };
 		0A4F5BCA1FB8CABB0089B0CC /* JSONHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONHelpers.h; sourceTree = "<group>"; };
 		0A4F5BCB1FB8CB270089B0CC /* exercises.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = exercises.json; path = ../../exercises.json; sourceTree = "<group>"; };
+		0A4F5BCD1FBA50B40089B0CC /* SteadyFlowLineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SteadyFlowLineViewController.h; sourceTree = "<group>"; };
+		0A4F5BCE1FBA50B40089B0CC /* SteadyFlowLineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SteadyFlowLineViewController.m; sourceTree = "<group>"; };
 		0AA596651FB896DC001D4D25 /* Breathe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breathe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA596681FB896DC001D4D25 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0AA596691FB896DC001D4D25 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -128,6 +131,8 @@
 				0A4F5BC61FB8B1230089B0CC /* BreathingViewController.m */,
 				0A4F5BC81FB8CA780089B0CC /* JSONHelpers.m */,
 				0A4F5BCA1FB8CABB0089B0CC /* JSONHelpers.h */,
+				0A4F5BCD1FBA50B40089B0CC /* SteadyFlowLineViewController.h */,
+				0A4F5BCE1FBA50B40089B0CC /* SteadyFlowLineViewController.m */,
 			);
 			path = Breathe;
 			sourceTree = "<group>";
@@ -285,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AA5966D1FB896DC001D4D25 /* ViewController.m in Sources */,
+				0A4F5BCF1FBA50B40089B0CC /* SteadyFlowLineViewController.m in Sources */,
 				0A4F5BC91FB8CA780089B0CC /* JSONHelpers.m in Sources */,
 				0AA596781FB896DC001D4D25 /* main.m in Sources */,
 				0A4F5BC71FB8B1230089B0CC /* BreathingViewController.m in Sources */,
