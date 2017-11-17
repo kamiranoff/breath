@@ -143,11 +143,19 @@ exhale while the line is growing. If the line thin exhale lightly if the lin
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exhale Strength" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzD-cz-wel">
+                                <rect key="frame" x="102" y="562" width="171" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="c2k-es-axn" firstAttribute="centerY" secondItem="rpU-po-HQ5" secondAttribute="centerY" id="1pj-12-Dvd"/>
+                            <constraint firstItem="gzD-cz-wel" firstAttribute="top" secondItem="pFh-1q-YK5" secondAttribute="bottom" constant="21" id="581-Gf-R2d"/>
                             <constraint firstItem="pFh-1q-YK5" firstAttribute="top" secondItem="iJE-UB-jM4" secondAttribute="bottom" constant="16" id="6cA-ZX-mFh"/>
+                            <constraint firstItem="gzD-cz-wel" firstAttribute="centerX" secondItem="rpU-po-HQ5" secondAttribute="centerX" id="A2c-2h-XTQ"/>
                             <constraint firstItem="iJE-UB-jM4" firstAttribute="top" secondItem="RP3-dO-raP" secondAttribute="bottom" constant="15" id="ATq-dv-9TQ"/>
                             <constraint firstItem="iJE-UB-jM4" firstAttribute="centerX" secondItem="rpU-po-HQ5" secondAttribute="centerX" id="B0C-V8-EaR"/>
                             <constraint firstItem="c2k-es-axn" firstAttribute="centerX" secondItem="rpU-po-HQ5" secondAttribute="centerX" id="EdY-Jq-hRx"/>
@@ -162,6 +170,7 @@ exhale while the line is growing. If the line thin exhale lightly if the lin
                     </view>
                     <connections>
                         <outlet property="descriptionTextOutlet" destination="sqm-qC-krQ" id="O5B-FO-ZWY"/>
+                        <outlet property="exhaleStrengthLabel" destination="gzD-cz-wel" id="5k6-Qc-b0V"/>
                         <outlet property="exhaleTimeLabel" destination="pFh-1q-YK5" id="tDt-3q-A2e"/>
                         <outlet property="inhaleTimeLabel" destination="iJE-UB-jM4" id="y2a-WA-i7q"/>
                         <outlet property="lblNumberOutlet" destination="RP3-dO-raP" id="uPd-Pd-5Le"/>

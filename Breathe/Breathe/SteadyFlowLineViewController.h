@@ -16,4 +16,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *inhaleTimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *exhaleTimeLabel;
 @property (nonatomic, strong) NSString * exerciceTitle;
+
+@property (weak, nonatomic) IBOutlet UILabel *exhaleStrengthLabel;
+
 @end
