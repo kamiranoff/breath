@@ -114,7 +114,7 @@ exhale while the line is growing. If the line thin exhale lightly if the lin
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RP3-dO-raP">
-                                <rect key="frame" x="132" y="217" width="111.5" height="233"/>
+                                <rect key="frame" x="132" y="217" width="112" height="233"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="200"/>
                                 <color key="textColor" red="1" green="0.96099581830000003" blue="0.96872527519999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -125,18 +125,6 @@ exhale while the line is growing. If the line thin exhale lightly if the lin
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2k-es-axn">
-                                <rect key="frame" x="151" y="306.5" width="72" height="54"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <state key="normal" title="Start">
-                                    <color key="titleColor" red="0.16213481530000001" green="0.63848779109999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="startBreathingBtn:" destination="ZdR-fp-PzW" eventType="touchUpInside" id="9HD-Vh-Bbn"/>
-                                    <action selector="startBreathingBtn:" destination="IXn-8W-BTF" eventType="touchUpInside" id="ODS-hE-iap"/>
-                                    <action selector="startBreathingBtn:" destination="OsW-HS-BE3" eventType="touchUpInside" id="UbT-0i-67L"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exhale time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFh-1q-YK5">
                                 <rect key="frame" x="122" y="511" width="131" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -149,26 +137,60 @@ exhale while the line is growing. If the line thin exhale lightly if the lin
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QXf-3E-PSw" userLabel="HelperHiddenView">
+                                <rect key="frame" x="16" y="333" width="343" height="1"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="9YC-t5-kcc"/>
+                                </constraints>
+                            </view>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chart" translatesAutoresizingMaskIntoConstraints="NO" id="FL5-jb-QW8">
+                                <rect key="frame" x="16" y="31" width="343" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="F2X-Ii-i6q"/>
+                                    <constraint firstAttribute="height" constant="300" id="vmB-3y-8vz"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2k-es-axn">
+                                <rect key="frame" x="151" y="306" width="72" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.16213481530000001" green="0.63848779109999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startBreathingBtn:" destination="ZdR-fp-PzW" eventType="touchUpInside" id="9HD-Vh-Bbn"/>
+                                    <action selector="startBreathingBtn:" destination="IXn-8W-BTF" eventType="touchUpInside" id="ODS-hE-iap"/>
+                                    <action selector="startBreathingBtn:" destination="OsW-HS-BE3" eventType="touchUpInside" id="UbT-0i-67L"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="c2k-es-axn" firstAttribute="centerY" secondItem="rpU-po-HQ5" secondAttribute="centerY" id="1pj-12-Dvd"/>
                             <constraint firstItem="gzD-cz-wel" firstAttribute="top" secondItem="pFh-1q-YK5" secondAttribute="bottom" constant="21" id="581-Gf-R2d"/>
                             <constraint firstItem="pFh-1q-YK5" firstAttribute="top" secondItem="iJE-UB-jM4" secondAttribute="bottom" constant="16" id="6cA-ZX-mFh"/>
+                            <constraint firstItem="FL5-jb-QW8" firstAttribute="leading" secondItem="Rew-Jo-pRt" secondAttribute="leading" constant="16" id="7Td-Uj-5SN"/>
                             <constraint firstItem="gzD-cz-wel" firstAttribute="centerX" secondItem="rpU-po-HQ5" secondAttribute="centerX" id="A2c-2h-XTQ"/>
+                            <constraint firstItem="Rew-Jo-pRt" firstAttribute="trailing" secondItem="FL5-jb-QW8" secondAttribute="trailing" constant="16" id="AQa-TW-j9q"/>
                             <constraint firstItem="iJE-UB-jM4" firstAttribute="top" secondItem="RP3-dO-raP" secondAttribute="bottom" constant="15" id="ATq-dv-9TQ"/>
                             <constraint firstItem="iJE-UB-jM4" firstAttribute="centerX" secondItem="rpU-po-HQ5" secondAttribute="centerX" id="B0C-V8-EaR"/>
-                            <constraint firstItem="c2k-es-axn" firstAttribute="centerX" secondItem="rpU-po-HQ5" secondAttribute="centerX" id="EdY-Jq-hRx"/>
+                            <constraint firstItem="QXf-3E-PSw" firstAttribute="top" secondItem="FL5-jb-QW8" secondAttribute="bottom" constant="2" id="JMG-kG-jxv"/>
                             <constraint firstItem="sqm-qC-krQ" firstAttribute="top" secondItem="Rew-Jo-pRt" secondAttribute="top" constant="75" id="JMy-7F-laU"/>
                             <constraint firstItem="pFh-1q-YK5" firstAttribute="centerX" secondItem="rpU-po-HQ5" secondAttribute="centerX" id="OjH-qG-tda"/>
                             <constraint firstItem="RP3-dO-raP" firstAttribute="centerX" secondItem="rpU-po-HQ5" secondAttribute="centerX" id="U0s-Se-LQM"/>
                             <constraint firstItem="RP3-dO-raP" firstAttribute="centerY" secondItem="rpU-po-HQ5" secondAttribute="centerY" id="W2K-Se-JWa"/>
                             <constraint firstItem="sqm-qC-krQ" firstAttribute="leading" secondItem="Rew-Jo-pRt" secondAttribute="leading" constant="16" id="WGV-Mc-Jjc"/>
+                            <constraint firstItem="c2k-es-axn" firstAttribute="centerY" secondItem="rpU-po-HQ5" secondAttribute="centerY" id="XcF-ww-R6C"/>
+                            <constraint firstItem="QXf-3E-PSw" firstAttribute="centerX" secondItem="rpU-po-HQ5" secondAttribute="centerX" id="c4G-cz-Jg0"/>
+                            <constraint firstItem="QXf-3E-PSw" firstAttribute="centerY" secondItem="rpU-po-HQ5" secondAttribute="centerY" id="sKL-al-tLg"/>
+                            <constraint firstItem="c2k-es-axn" firstAttribute="centerX" secondItem="rpU-po-HQ5" secondAttribute="centerX" id="sPP-i1-ZGO"/>
                             <constraint firstItem="Rew-Jo-pRt" firstAttribute="trailing" secondItem="sqm-qC-krQ" secondAttribute="trailing" constant="16" id="wew-Sl-8Wo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Rew-Jo-pRt"/>
                     </view>
                     <connections>
+                        <outlet property="chart" destination="FL5-jb-QW8" id="8PL-Lt-KEd"/>
                         <outlet property="descriptionTextOutlet" destination="sqm-qC-krQ" id="O5B-FO-ZWY"/>
                         <outlet property="exhaleStrengthLabel" destination="gzD-cz-wel" id="5k6-Qc-b0V"/>
                         <outlet property="exhaleTimeLabel" destination="pFh-1q-YK5" id="tDt-3q-A2e"/>
@@ -262,4 +284,7 @@ Exhale when the screen is red</string>
             <point key="canvasLocation" x="869.60000000000002" y="-433.13343328335833"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chart" width="1258" height="1254"/>
+    </resources>
 </document>

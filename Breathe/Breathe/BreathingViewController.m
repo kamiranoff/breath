@@ -29,9 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-  
-  
-  NSLog(_exerciceTitle);
+    
   inhaleBgColor = [[UIColor alloc]initWithRed:2.0/255.0 green:132.0/255.0 blue:168.0/255.0 alpha:1.0];
   exhaleBgColor = [[UIColor alloc]initWithRed:255.0/255.0 green:83.0/255.0 blue:13.0/255.0 alpha:1.0];
 
@@ -52,7 +50,8 @@
 
 - (void)onTickInhale
 {
-  if (--remainingCounts <= -1) {
+  // remainingCounts = remainingCounts - 1;
+  if (--remainingCounts <= 0) {
     [self startTimerExhale:currentExhaleValue];
     self.view.backgroundColor = exhaleBgColor;
 
@@ -65,7 +64,7 @@
 
 - (void)onTickExhale
 {
-  if (--remainingCounts <= -1) {
+  if (--remainingCounts <= 0) {
     [exhaleTimer invalidate];
     [self onExerciseFinished];
   }

@@ -17,6 +17,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *exhaleTimeLabel;
 @property (nonatomic, strong) NSString * exerciceTitle;
 
+@property (weak, nonatomic) IBOutlet UIImageView *chart;
+
 @property (weak, nonatomic) IBOutlet UILabel *exhaleStrengthLabel;
 
 @end
