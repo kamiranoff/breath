@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A4F5BC41FB8A28F0089B0CC /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F5BC31FB8A28F0089B0CC /* CollectionViewCell.m */; };
+		0A4F5BC41FB8A28F0089B0CC /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F5BC31FB8A28F0089B0CC /* TableViewCell.m */; };
 		0A4F5BC71FB8B1230089B0CC /* BreathingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F5BC61FB8B1230089B0CC /* BreathingViewController.m */; };
 		0A4F5BC91FB8CA780089B0CC /* JSONHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F5BC81FB8CA780089B0CC /* JSONHelpers.m */; };
 		0A4F5BCC1FB8CB270089B0CC /* exercises.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A4F5BCB1FB8CB270089B0CC /* exercises.json */; };
@@ -41,8 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A4F5BC21FB8A28F0089B0CC /* CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
-		0A4F5BC31FB8A28F0089B0CC /* CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		0A4F5BC21FB8A28F0089B0CC /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		0A4F5BC31FB8A28F0089B0CC /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		0A4F5BC51FB8B1230089B0CC /* BreathingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BreathingViewController.h; sourceTree = "<group>"; };
 		0A4F5BC61FB8B1230089B0CC /* BreathingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BreathingViewController.m; sourceTree = "<group>"; };
 		0A4F5BC81FB8CA780089B0CC /* JSONHelpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONHelpers.m; sourceTree = "<group>"; };
@@ -124,8 +124,8 @@
 				0AA5966B1FB896DC001D4D25 /* ViewController.h */,
 				0AA5966C1FB896DC001D4D25 /* ViewController.m */,
 				0AA5966E1FB896DC001D4D25 /* Main.storyboard */,
-				0A4F5BC21FB8A28F0089B0CC /* CollectionViewCell.h */,
-				0A4F5BC31FB8A28F0089B0CC /* CollectionViewCell.m */,
+				0A4F5BC21FB8A28F0089B0CC /* TableViewCell.h */,
+				0A4F5BC31FB8A28F0089B0CC /* TableViewCell.m */,
 				0AA596711FB896DC001D4D25 /* Assets.xcassets */,
 				0AA596731FB896DC001D4D25 /* LaunchScreen.storyboard */,
 				0AA596761FB896DC001D4D25 /* Info.plist */,
@@ -298,7 +298,7 @@
 				0A4F5BC91FB8CA780089B0CC /* JSONHelpers.m in Sources */,
 				0AA596781FB896DC001D4D25 /* main.m in Sources */,
 				0A4F5BC71FB8B1230089B0CC /* BreathingViewController.m in Sources */,
-				0A4F5BC41FB8A28F0089B0CC /* CollectionViewCell.m in Sources */,
+				0A4F5BC41FB8A28F0089B0CC /* TableViewCell.m in Sources */,
 				0AA5966A1FB896DC001D4D25 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

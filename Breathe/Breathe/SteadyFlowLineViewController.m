@@ -196,5 +196,11 @@ UIColor *exhaleBgColor;
   [self startTimerInhale:currentInhaleValue];
 }
 
+- (BOOL)navigationBar:(UINavigationBar *)navigationBar shouldPopItem:(UINavigationItem     *)item
+{
+  //insert your back button handling logic here
+  // let the pop happen
+  return YES;
+}
 
 @end

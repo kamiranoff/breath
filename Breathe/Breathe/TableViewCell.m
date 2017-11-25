@@ -6,8 +6,8 @@
 //  Copyright © 2017 Kevin Amiranoff. All rights reserved.
 //
 
-#import "CollectionViewCell.h"
+#import "TableViewCell.h"
 
-@implementation CollectionViewCell
+@implementation TableViewCell
 
 @end

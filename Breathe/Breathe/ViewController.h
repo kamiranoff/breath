@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UICollectionViewDelegate,UICollectionViewDataSource> {
+@interface ViewController : UIViewController <UITableViewDelegate,UITableViewDataSource> {
   
 }
-@property (weak, nonatomic) IBOutlet UICollectionView *exercicesCollectionView;
+@property (weak, nonatomic) IBOutlet UITableView *exercicesTableView;
 
 @end
 

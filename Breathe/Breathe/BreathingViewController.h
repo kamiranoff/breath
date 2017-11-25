@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BreathingViewController : UIViewController
+@interface BreathingViewController : UIViewController<UINavigationControllerDelegate>
 - (IBAction)startBreathingBtn:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextView *descriptionTextOutlet;
 @property (weak, nonatomic) IBOutlet UILabel *lblNumberOutlet;

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SteadyFlowLineViewController : UIViewController
+@interface SteadyFlowLineViewController : UIViewController<UINavigationControllerDelegate>
 - (IBAction)startBreathingBtn:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextView *descriptionTextOutlet;
 @property (weak, nonatomic) IBOutlet UILabel *lblNumberOutlet;

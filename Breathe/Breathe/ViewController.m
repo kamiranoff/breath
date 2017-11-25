@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "CollectionViewCell.h"
+#import "TableViewCell.h"
 #import "BreathingViewController.h"
 #import "SteadyFlowLineViewController.h"
 
@@ -18,15 +18,13 @@
 
 @implementation ViewController
 
-static NSString * const reuseIdentifier = @"Cell";
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
   
-  _exercicesCollectionView.delegate = self;
-  _exercicesCollectionView.dataSource = self;
-  _exercicesCollectionView.allowsMultipleSelection = false;
+  _exercicesTableView.delegate = self;
+  _exercicesTableView.dataSource = self;
+  _exercicesTableView.allowsMultipleSelection = false;
 
   
   exercises = @[@"Breathing", @"steadyFlowLine",@"steadyFlowLineWithVowels",@"decibelFeedback",@"decibelFeedbackWithVowels"];
@@ -38,28 +36,45 @@ static NSString * const reuseIdentifier = @"Cell";
     // Dispose of any resources that can be recreated.
 }
 
-
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
   return 1;
 }
 
-
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+  // Number of rows is the number of time zones in the region for the specified section.
   return exercises.count;
 }
 
 
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-  CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+  static NSString *MyIdentifier = @"Cell";
+
+  TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
   
-  cell.lblCellLabel.text = exercises[indexPath.row];
+  if (cell == nil) {
+    cell = [[TableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MyIdentifier];
+  }
+
+  cell.textLabel.text = exercises[indexPath.row];
   return cell;
 }
 
--(void) collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-  
+
+//
+//
+//- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+//  CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+//
+//  cell.lblCellLabel.text = exercises[indexPath.row];
+//  return cell;
+//}
+//
+
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
   NSString * exercise = exercises[indexPath.row];
-  
+
   if([exercise isEqualToString:@"Breathing"]) {
     [self performSegueWithIdentifier:@"Breathing" sender:nil];
   } else if([exercise isEqualToString:@"steadyFlowLine"]){

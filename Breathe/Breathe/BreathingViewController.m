@@ -26,6 +26,8 @@
 
 @implementation BreathingViewController
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -38,7 +40,8 @@
   currentExerciseIndex = 0;
   
   [self displayNextExerciseValues];
-}
+  }
+
 
 -(void)displayNextExerciseValues {
   int nextInhaleValue = [self getCurrentExerciseValue:currentExerciseIndex key:@"inhale"];
@@ -129,4 +132,6 @@
   [self startTimerInhale:currentInhaleValue];
 }
 
+- (IBAction)backBtn:(id)sender {
+}
 @end
