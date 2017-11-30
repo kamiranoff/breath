@@ -6,10 +6,10 @@
 //  Copyright © 2017 Kevin Amiranoff. All rights reserved.
 //
 
-#import "BreathingViewController.h"
+#import "Vowels.h"
 #import "JSONHelpers.h"
 
-@interface BreathingViewController () {
+@interface Vowels () {
   NSDictionary * exercises;
   NSArray * breathingExercise;
   NSTimer *inhaleTimer;
@@ -17,6 +17,7 @@
   int remainingCounts;
   int currentInhaleLength;
   int currentExhaleValue;
+  NSString * currentVowel;
   int currentExerciseIndex;
   UIColor *inhaleBgColor;
   UIColor *exhaleBgColor;
@@ -24,30 +25,30 @@
 
 @end
 
-@implementation BreathingViewController
-
-
+@implementation Vowels
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
+  [super viewDidLoad];
+  // Do any additional setup after loading the view.
+  
   inhaleBgColor = [[UIColor alloc]initWithRed:2.0/255.0 green:132.0/255.0 blue:168.0/255.0 alpha:1.0];
   exhaleBgColor = [[UIColor alloc]initWithRed:239.0/255.0 green:82.0/255.0 blue:91.0/255.0 alpha:1.0];
-
+  
   exercises = [JSONHelpers JSONFromFile:@"exercises"];
-  breathingExercise = [exercises objectForKey:@"breathing"];
+  breathingExercise = [exercises objectForKey:@"vowels"];
   currentExerciseIndex = 0;
   
   [self displayNextExerciseValues];
-  }
+}
 
 
 -(void)displayNextExerciseValues {
   int nextInhaleValue = [self getCurrentExerciseValue:currentExerciseIndex key:@"inhale"];
   int nextExhaleValue = [self getCurrentExerciseValue:currentExerciseIndex key:@"exhale"];
+  NSString * nextExhaleVowel = [self getCurrentExerciseStringValue:currentExerciseIndex key:@"vowel"];
   _inhaleTimeLabel.text = [NSString stringWithFormat:@"Inhale time: %d seconds", nextInhaleValue];
   _exhaleTimeLabel.text =  [NSString stringWithFormat:@"Exhale time: %d seconds", nextExhaleValue];
+  _exhaleVowelLabel.text =  [NSString stringWithFormat:@"Vowel: %@", nextExhaleVowel];
   
 }
 
@@ -57,9 +58,12 @@
   if (--remainingCounts <= 0) {
     [self startTimerExhale:currentExhaleValue];
     self.view.backgroundColor = exhaleBgColor;
-
+    _exhaleVowel.hidden = NO;
+    _exhaleNumberlbl.hidden = NO;
+    _lblNumberOutlet.hidden = YES;
     
-  [inhaleTimer invalidate];
+    
+    [inhaleTimer invalidate];
     
   }
   [self changeNumberOnScreen:remainingCounts];
@@ -72,19 +76,22 @@
     [self onExerciseFinished];
   }
   
-  [self changeNumberOnScreen:remainingCounts];
+  [self changeExhaleValuesOnScreen:remainingCounts];
 }
 
 
 -(void)onExerciseFinished {
+  currentExerciseIndex = currentExerciseIndex + 1;
   _inhaleTimeLabel.hidden = NO;
   _exhaleTimeLabel.hidden = NO;
-  currentExerciseIndex = currentExerciseIndex + 1;
+  _exhaleVowelLabel.hidden = NO;
   _lblNumberOutlet.hidden = YES;
   _startBreathingLbl.hidden = NO;
+  _exhaleNumberlbl.hidden = YES;
+  _navigation.hidden = NO;
   self.view.backgroundColor = [[UIColor alloc]initWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0];
   
-   [self displayNextExerciseValues];
+  [self displayNextExerciseValues];
 }
 
 - (int)getCurrentExerciseValue:(int)index key:(NSString*)key {
@@ -93,29 +100,41 @@
   return [currentValue intValue];
 }
 
+- (NSString *)getCurrentExerciseStringValue:(int)index key:(NSString*)key {
+  NSDictionary * currentExercise = [breathingExercise objectAtIndex:index];
+  NSString * currentValue = [currentExercise objectForKey:key];
+  return currentValue;
+}
+
 -(void)changeNumberOnScreen:(int)valueToDisplay {
   NSString * value = [NSString stringWithFormat:@"%d",valueToDisplay];
-  _lblNumberOutlet.text = value;
+ _lblNumberOutlet.text = value;
+}
+
+-(void)changeExhaleValuesOnScreen:(int)valueToDisplay {
+  NSString * value = [NSString stringWithFormat:@"%d",valueToDisplay];
+  _exhaleNumberlbl.text = value;
+  _exhaleVowel.text = currentVowel;
 }
 
 -(void)startTimerInhale:(int)count {
-  
   inhaleTimer = [NSTimer scheduledTimerWithTimeInterval:1
-                                           target:self
-                                         selector:@selector(onTickInhale)
-                                         userInfo:nil
-                                          repeats:YES];
+                                                 target:self
+                                               selector:@selector(onTickInhale)
+                                               userInfo:nil
+                                                repeats:YES];
   remainingCounts = count;
 }
 
 -(void)startTimerExhale:(int)count  {
   
   exhaleTimer = [NSTimer scheduledTimerWithTimeInterval:1
-                                           target:self
-                                         selector:@selector(onTickExhale)
-                                         userInfo:nil
-                                          repeats:YES];
+                                                 target:self
+                                               selector:@selector(onTickExhale)
+                                               userInfo:nil
+                                                repeats:YES];
   remainingCounts = count;
+  _exhaleNumberlbl.hidden = NO;
 }
 
 - (IBAction)startBreathingBtn:(id)sender {
@@ -124,14 +143,19 @@
   _lblNumberOutlet.hidden = NO;
   _inhaleTimeLabel.hidden = YES;
   _exhaleTimeLabel.hidden = YES;
- 
+  _exhaleNumberlbl.hidden = YES;
+  _exhaleVowelLabel.hidden = YES;
+  _navigation.hidden = YES;
+  _exhaleVowel.hidden = YES;
+  
+  
   int currentInhaleValue = [self getCurrentExerciseValue:currentExerciseIndex key:@"inhale"];
   currentExhaleValue = [self getCurrentExerciseValue:currentExerciseIndex key:@"exhale"];
+  currentVowel = [self getCurrentExerciseStringValue:currentExerciseIndex key:@"vowel"];
   self.view.backgroundColor = inhaleBgColor;
   [self changeNumberOnScreen:currentInhaleValue];
   [self startTimerInhale:currentInhaleValue];
 }
 
-- (IBAction)backBtn:(id)sender {
-}
 @end
+

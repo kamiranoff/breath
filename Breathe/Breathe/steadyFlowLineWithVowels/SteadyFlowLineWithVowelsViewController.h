@@ -10,7 +10,7 @@
 
 @interface SteadyFlowLineWithVowelsViewController : UIViewController
 - (IBAction)startBreathingBtn:(id)sender;
-@property (weak, nonatomic) IBOutlet UITextView *descriptionTextOutlet;
+@property (weak, nonatomic) IBOutlet UILabel *descriptionTextOutlet;
 @property (weak, nonatomic) IBOutlet UILabel *lblNumberOutlet;
 @property (weak, nonatomic) IBOutlet UIButton *startBreathingLbl;
 @property (weak, nonatomic) IBOutlet UILabel *inhaleTimeLabel;
@@ -19,6 +19,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *chart;
 @property (weak, nonatomic) IBOutlet UILabel *vowel;
+@property (weak, nonatomic) IBOutlet UINavigationBar *navigation;
 
 @property (weak, nonatomic) IBOutlet UILabel *exhaleStrengthLabel;
 @end

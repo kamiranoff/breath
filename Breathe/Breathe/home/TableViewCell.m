@@ -10,4 +10,10 @@
 
 @implementation TableViewCell
 
+
+-(void)configureCell:(NSString * )title desc:(NSString *)description {
+  _cellTitle.text = title;
+  _cellDescription.text = description;
+}
+
 @end

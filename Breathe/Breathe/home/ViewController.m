@@ -13,6 +13,7 @@
 
 @interface ViewController () {
   NSArray * exercises;
+  NSArray * exercisesDescription;
 }
 @end
 
@@ -27,7 +28,8 @@
   _exercicesTableView.allowsMultipleSelection = false;
 
   
-  exercises = @[@"Breathing", @"steadyFlowLine",@"steadyFlowLineWithVowels",@"decibelFeedback",@"decibelFeedbackWithVowels"];
+  exercises = @[@"Breathe in and out",@"Breathing in and vowels", @"Steady flow Line",@"Steady flow Line with Vowels", @"Emotions",@"Decibel feeback",@"decibel feeback with vowels"];
+  exercisesDescription = @[@"Inhale and exhale for the specified amount of time",@"Inhale and pronounce the vowel for the specified amount of time", @"Breath in and exhale at different strength", @"Breath in and pronounce the vowel for an amount of time ", @"Pronounces sentences with different emotions",@"Decibel feeback",@"decibel feeback with vowels"];
 }
 
 
@@ -46,42 +48,31 @@
 }
 
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   static NSString *MyIdentifier = @"Cell";
 
-  TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
+  TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier forIndexPath:indexPath];
   
-  if (cell == nil) {
-    cell = [[TableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MyIdentifier];
-  }
-
-  cell.textLabel.text = exercises[indexPath.row];
+  cell.cellTitle.text = exercises[indexPath.row];
+  cell.cellDescription.text = exercisesDescription[indexPath.row];
   return cell;
 }
-
-
-//
-//
-//- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-//  CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-//
-//  cell.lblCellLabel.text = exercises[indexPath.row];
-//  return cell;
-//}
-//
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 
   NSString * exercise = exercises[indexPath.row];
 
-  if([exercise isEqualToString:@"Breathing"]) {
+  if([exercise isEqualToString:exercises[0]]) {
     [self performSegueWithIdentifier:@"Breathing" sender:nil];
-  } else if([exercise isEqualToString:@"steadyFlowLine"]){
+  }else if([exercise isEqualToString:exercises[1]]){
+    [self performSegueWithIdentifier:@"Vowels" sender:nil];
+  } else if([exercise isEqualToString:exercises[2]]){
     [self performSegueWithIdentifier:@"SteadyFlowLine" sender:nil];
-  } else if([exercise isEqualToString:@"steadyFlowLineWithVowels"]){
+  } else if([exercise isEqualToString:exercises[3]]){
     [self performSegueWithIdentifier:@"SteadyFlowLineWithVowel" sender:nil];
-  }else {
+  }else if([exercise isEqualToString:exercises[4]]){
+    [self performSegueWithIdentifier:@"Emotions" sender:nil];
+  } else {
     [self performSegueWithIdentifier:@"Breathing" sender:nil];
 
   }

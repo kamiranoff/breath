@@ -124,66 +124,6 @@
 					"strength": 2,
 					"duration": 6
 				}
-			},
-			{
-				"inhale": {
-					"strength": 2,
-					"duration": 4
-				},
-				"exhale": {
-					"strength": 2,
-					"duration": 8
-				}
-			},
-			{
-				"inhale": {
-					"strength": 2,
-					"duration": 4
-				},
-				"exhale": {
-					"strength": 2,
-					"duration": 10
-				}
-			},
-			{
-				"inhale": {
-					"strength": 2,
-					"duration": 4
-				},
-				"exhale": {
-					"strength": 2,
-					"duration": 12
-				}
-			},
-			{
-				"inhale": {
-					"strength": 2,
-					"duration": 4
-				},
-				"exhale": {
-					"strength": 2,
-					"duration": 14
-				}
-			},
-			{
-				"inhale": {
-					"strength": 3,
-					"duration": 2
-				},
-				"exhale": {
-					"strength": 2,
-					"duration": 8
-				}
-			},
-			{
-				"inhale": {
-					"strength": 3,
-					"duration": 1
-				},
-				"exhale": {
-					"strength": 2,
-					"duration": 6
-				}
 			}
 		],
 		"exercise2": [
@@ -205,66 +145,6 @@
 				"exhale": {
 					"strength": 3,
 					"duration": 4
-				}
-			},
-			{
-				"inhale": {
-					"strength": 2,
-					"duration": 4
-				},
-				"exhale": {
-					"strength": 3,
-					"duration": 5
-				}
-			},
-			{
-				"inhale": {
-					"strength": 2,
-					"duration": 4
-				},
-				"exhale": {
-					"strength": 3,
-					"duration": 6
-				}
-			},
-			{
-				"inhale": {
-					"strength": 2,
-					"duration": 4
-				},
-				"exhale": {
-					"strength": 3,
-					"duration": 7
-				}
-			},
-			{
-				"inhale": {
-					"strength": 2,
-					"duration": 4
-				},
-				"exhale": {
-					"strength": 3,
-					"duration": 8
-				}
-			},
-			{
-				"inhale": {
-					"strength": 3,
-					"duration": 2
-				},
-				"exhale": {
-					"strength": 3,
-					"duration": 4
-				}
-			},
-			{
-				"inhale": {
-					"strength": 3,
-					"duration": 1
-				},
-				"exhale": {
-					"strength": 3,
-					"duration": 3
 				}
 			}
 		],
@@ -297,56 +177,6 @@
 				"exhale": {
 					"strength": 1,
 					"duration": 10
-				}
-			},
-			{
-				"inhale": {
-					"strength": 2,
-					"duration": 4
-				},
-				"exhale": {
-					"strength": 1,
-					"duration": 12
-				}
-			},
-			{
-				"inhale": {
-					"strength": 2,
-					"duration": 4
-				},
-				"exhale": {
-					"strength": 1,
-					"duration": 14
-				}
-			},
-			{
-				"inhale": {
-					"strength": 2,
-					"duration": 4
-				},
-				"exhale": {
-					"strength": 1,
-					"duration": 16
-				}
-			},
-			{
-				"inhale": {
-					"strength": 3,
-					"duration": 2
-				},
-				"exhale": {
-					"strength": 1,
-					"duration": 10
-				}
-			},
-			{
-				"inhale": {
-					"strength": 3,
-					"duration": 1
-				},
-				"exhale": {
-					"strength": 1,
-					"duration": 8
 				}
 			}
 		]
