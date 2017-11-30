@@ -33,7 +33,7 @@
     // Do any additional setup after loading the view.
     
   inhaleBgColor = [[UIColor alloc]initWithRed:2.0/255.0 green:132.0/255.0 blue:168.0/255.0 alpha:1.0];
-  exhaleBgColor = [[UIColor alloc]initWithRed:255.0/255.0 green:83.0/255.0 blue:13.0/255.0 alpha:1.0];
+  exhaleBgColor = [[UIColor alloc]initWithRed:239.0/255.0 green:82.0/255.0 blue:91.0/255.0 alpha:1.0];
 
   exercises = [JSONHelpers JSONFromFile:@"exercises"];
   breathingExercise = [exercises objectForKey:@"breathing"];
@@ -47,7 +47,7 @@
   int nextInhaleValue = [self getCurrentExerciseValue:currentExerciseIndex key:@"inhale"];
   int nextExhaleValue = [self getCurrentExerciseValue:currentExerciseIndex key:@"exhale"];
   _inhaleTimeLabel.text = [NSString stringWithFormat:@"Inhale time: %d seconds", nextInhaleValue];
-  _exhaleTimeLabel.text =  [NSString stringWithFormat:@"Inhale time: %d seconds", nextExhaleValue];
+  _exhaleTimeLabel.text =  [NSString stringWithFormat:@"Exhale time: %d seconds", nextExhaleValue];
   
 }
 

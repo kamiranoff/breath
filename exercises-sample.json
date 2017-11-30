@@ -1708,49 +1708,13 @@
 	"vowels": {
 		"exercise1": [
 			{
-				"inhale": 2,
-				
+				"inhale": 2,			
 				"vowel": "E",
 				"exhale": 4
 				
 			},
 			{
 				"inhale": 3,
-				"vowel": "E",
-				"exhale": 6
-			},
-			{
-				"inhale": 4,
-				"vowel": "E",
-				"exhale": 6
-			},
-			{
-				"inhale": 5,
-				"vowel": "E",
-				"exhale": 6
-			},
-			{
-				"inhale": 6,
-				"vowel": "E",
-				"exhale": 8
-			},
-			{
-				"inhale": 6,
-				"vowel": "E",
-				"exhale": 10
-			},
-			{
-				"inhale": 4,
-				"vowel": "E",
-				"exhale": 10
-			},
-			{
-				"inhale": 2,
-				"vowel": "E",
-				"exhale": 7
-			},
-			{
-				"inhale": 1,
 				"vowel": "E",
 				"exhale": 6
 			}
@@ -1770,36 +1734,6 @@
 				"inhale": 4,
 				"vowel": "A",
 				"exhale": 6
-			},
-			{
-				"inhale": 5,
-				"vowel": "A",
-				"exhale": 6
-			},
-			{
-				"inhale": 6,
-				"vowel": "A",
-				"exhale": 8
-			},
-			{
-				"inhale": 6,
-				"vowel": "A",
-				"exhale": 10
-			},
-			{
-				"inhale": 4,
-				"vowel": "A",
-				"exhale": 10
-			},
-			{
-				"inhale": 2,
-				"vowel": "A",
-				"exhale": 7
-			},
-			{
-				"inhale": 1,
-				"vowel": "A",
-				"exhale": 6
 			}
 		],
 		"exercise3": [
@@ -1807,46 +1741,6 @@
 				"inhale": 2,
 				"vowel": "I",
 				"exhale": 4
-			},
-			{
-				"inhale": 3,
-				"vowel": "I",
-				"exhale": 6
-			},
-			{
-				"inhale": 4,
-				"vowel": "I",
-				"exhale": 6
-			},
-			{
-				"inhale": 5,
-				"vowel": "I",
-				"exhale": 6
-			},
-			{
-				"inhale": 6,
-				"vowel": "I",
-				"exhale": 8
-			},
-			{
-				"inhale": 6,
-				"vowel": "I",
-				"exhale": 10
-			},
-			{
-				"inhale": 4,
-				"vowel": "I",
-				"exhale": 10
-			},
-			{
-				"inhale": 2,
-				"vowel": "I",
-				"exhale": 7
-			},
-			{
-				"inhale": 1,
-				"vowel": "I",
-				"exhale": 6
 			}
 		],
 		"exercise4": [
@@ -1854,46 +1748,6 @@
 				"inhale": 2,
 				"vowel": "O",
 				"exhale": 4
-			},
-			{
-				"inhale": 3,
-				"vowel": "O",
-				"exhale": 6
-			},
-			{
-				"inhale": 4,
-				"vowel": "O",
-				"exhale": 6
-			},
-			{
-				"inhale": 5,
-				"vowel": "O",
-				"exhale": 6
-			},
-			{
-				"inhale": 6,
-				"vowel": "O",
-				"exhale": 8
-			},
-			{
-				"inhale": 6,
-				"vowel": "O",
-				"exhale": 10
-			},
-			{
-				"inhale": 4,
-				"vowel": "O",
-				"exhale": 10
-			},
-			{
-				"inhale": 2,
-				"vowel": "O",
-				"exhale": 7
-			},
-			{
-				"inhale": 1,
-				"vowel": "O",
-				"exhale": 6
 			}
 		],
 		"exercise5": [
@@ -1901,46 +1755,6 @@
 				"inhale": 2,
 				"vowel": "U",
 				"exhale": 4
-			},
-			{
-				"inhale": 3,
-				"vowel": "U",
-				"exhale": 6
-			},
-			{
-				"inhale": 4,
-				"vowel": "U",
-				"exhale": 6
-			},
-			{
-				"inhale": 5,
-				"vowel": "U",
-				"exhale": 6
-			},
-			{
-				"inhale": 6,
-				"vowel": "U",
-				"exhale": 8
-			},
-			{
-				"inhale": 6,
-				"vowel": "U",
-				"exhale": 10
-			},
-			{
-				"inhale": 4,
-				"vowel": "U",
-				"exhale": 10
-			},
-			{
-				"inhale": 2,
-				"vowel": "U",
-				"exhale": 7
-			},
-			{
-				"inhale": 1,
-				"vowel": "U",
-				"exhale": 6
 			}
 		]
 	},

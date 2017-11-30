@@ -79,6 +79,8 @@
     [self performSegueWithIdentifier:@"Breathing" sender:nil];
   } else if([exercise isEqualToString:@"steadyFlowLine"]){
     [self performSegueWithIdentifier:@"SteadyFlowLine" sender:nil];
+  } else if([exercise isEqualToString:@"steadyFlowLineWithVowels"]){
+    [self performSegueWithIdentifier:@"SteadyFlowLineWithVowel" sender:nil];
   }else {
     [self performSegueWithIdentifier:@"Breathing" sender:nil];
 
