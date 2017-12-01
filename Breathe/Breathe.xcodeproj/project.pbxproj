@@ -25,6 +25,7 @@
 		0AA9E6971FCE3DF900C2C628 /* SteadyFlowLineWithVowelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA9E6961FCE3DF900C2C628 /* SteadyFlowLineWithVowelsViewController.m */; };
 		0AB090E91FD04EF500817F7B /* EmotionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB090E81FD04EF500817F7B /* EmotionsViewController.m */; };
 		0AB090F31FD08E1800817F7B /* Vowels.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB090F21FD08E1800817F7B /* Vowels.m */; };
+		0AB090F81FD1823000817F7B /* Pitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB090F71FD1823000817F7B /* Pitch.m */; };
 		77F6DD8DE2092AD442CA5B2E /* Pods_BreatheTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C05361ACDDF7E385DB718A93 /* Pods_BreatheTests.framework */; };
 		C6FFC3A1FBCF5A2840121E22 /* Pods_Breathe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6CB4BE9BA08556ABC7C7270 /* Pods_Breathe.framework */; };
 		E7F06522C1CDC51A43B694F1 /* Pods_BreatheUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C240544AC2E0DBCB9EFF2653 /* Pods_BreatheUITests.framework */; };
@@ -54,10 +55,10 @@
 		0A4F5BC61FB8B1230089B0CC /* BreathingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BreathingViewController.m; sourceTree = "<group>"; };
 		0A4F5BC81FB8CA780089B0CC /* JSONHelpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONHelpers.m; sourceTree = "<group>"; };
 		0A4F5BCA1FB8CABB0089B0CC /* JSONHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONHelpers.h; sourceTree = "<group>"; };
-		0A4F5BCB1FB8CB270089B0CC /* exercises.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = exercises.json; path = ../../exercises.json; sourceTree = "<group>"; };
+		0A4F5BCB1FB8CB270089B0CC /* exercises.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exercises.json; sourceTree = "<group>"; };
 		0A4F5BCD1FBA50B40089B0CC /* SteadyFlowLineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SteadyFlowLineViewController.h; sourceTree = "<group>"; };
 		0A4F5BCE1FBA50B40089B0CC /* SteadyFlowLineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SteadyFlowLineViewController.m; sourceTree = "<group>"; };
-		0A860DCC1FC1DF3200639544 /* exercises-sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "exercises-sample.json"; path = "../../exercises-sample.json"; sourceTree = "<group>"; };
+		0A860DCC1FC1DF3200639544 /* exercises-sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "exercises-sample.json"; sourceTree = "<group>"; };
 		0AA596651FB896DC001D4D25 /* Breathe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breathe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA596681FB896DC001D4D25 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0AA596691FB896DC001D4D25 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -82,6 +83,8 @@
 		0AB090E81FD04EF500817F7B /* EmotionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmotionsViewController.m; sourceTree = "<group>"; };
 		0AB090F11FD08E1800817F7B /* Vowels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vowels.h; sourceTree = "<group>"; };
 		0AB090F21FD08E1800817F7B /* Vowels.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vowels.m; sourceTree = "<group>"; };
+		0AB090F61FD1823000817F7B /* Pitch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pitch.h; sourceTree = "<group>"; };
+		0AB090F71FD1823000817F7B /* Pitch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pitch.m; sourceTree = "<group>"; };
 		0F4AA2A824EF3BEA4F908C0A /* Pods-BreatheTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreatheTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BreatheTests/Pods-BreatheTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4FB7651CD7C3115C3DAD7A2D /* Pods-BreatheUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreatheUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BreatheUITests/Pods-BreatheUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B9E406CFAFDD4FDBAD1BBF12 /* Pods-Breathe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breathe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Breathe/Pods-Breathe.debug.xcconfig"; sourceTree = "<group>"; };
@@ -146,6 +149,8 @@
 		0AA596671FB896DC001D4D25 /* Breathe */ = {
 			isa = PBXGroup;
 			children = (
+				0AB090F51FD1821E00817F7B /* pitch */,
+				0AB090F41FD180BC00817F7B /* assets */,
 				0AB090F01FD08E0400817F7B /* vowels */,
 				0AB090EF1FD08CDE00817F7B /* Emotions */,
 				0AB090EE1FD08CC600817F7B /* home */,
@@ -153,8 +158,6 @@
 				0AB090EC1FD08C8D00817F7B /* steadyFlowLine */,
 				0AB090EB1FD08C7B00817F7B /* breathing */,
 				0AB090EA1FD08C6D00817F7B /* Helpers */,
-				0A4F5BCB1FB8CB270089B0CC /* exercises.json */,
-				0A860DCC1FC1DF3200639544 /* exercises-sample.json */,
 				0AA596681FB896DC001D4D25 /* AppDelegate.h */,
 				0AA596691FB896DC001D4D25 /* AppDelegate.m */,
 				0AA5966E1FB896DC001D4D25 /* Main.storyboard */,
@@ -249,6 +252,24 @@
 				0AB090F21FD08E1800817F7B /* Vowels.m */,
 			);
 			path = vowels;
+			sourceTree = "<group>";
+		};
+		0AB090F41FD180BC00817F7B /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				0A4F5BCB1FB8CB270089B0CC /* exercises.json */,
+				0A860DCC1FC1DF3200639544 /* exercises-sample.json */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		0AB090F51FD1821E00817F7B /* pitch */ = {
+			isa = PBXGroup;
+			children = (
+				0AB090F61FD1823000817F7B /* Pitch.h */,
+				0AB090F71FD1823000817F7B /* Pitch.m */,
+			);
+			path = pitch;
 			sourceTree = "<group>";
 		};
 		258377F380E3EA4DCCBC95AC /* Pods */ = {
@@ -562,6 +583,7 @@
 				0A4F5BCF1FBA50B40089B0CC /* SteadyFlowLineViewController.m in Sources */,
 				0A4F5BC91FB8CA780089B0CC /* JSONHelpers.m in Sources */,
 				0AB090F31FD08E1800817F7B /* Vowels.m in Sources */,
+				0AB090F81FD1823000817F7B /* Pitch.m in Sources */,
 				0AA596781FB896DC001D4D25 /* main.m in Sources */,
 				0A4F5BC71FB8B1230089B0CC /* BreathingViewController.m in Sources */,
 				0A4F5BC41FB8A28F0089B0CC /* TableViewCell.m in Sources */,

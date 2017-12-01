@@ -1896,8 +1896,7 @@
 	],
 	"vowels": [
 			{
-				"inhale": 2,
-				
+				"inhale": 2,		
 				"vowel": "E",
 				"exhale": 4
 				
@@ -2122,8 +2121,7 @@
 				"vowel": "U",
 				"exhale": 6
 			}
-		]
-	},
+		],
 	"vowelsWithColors": {
 		"exercise1": [
 			{

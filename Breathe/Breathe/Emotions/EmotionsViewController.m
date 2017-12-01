@@ -103,4 +103,9 @@
     [self displayNextSentence:emotion];
   }
 }
+
+- (IBAction)backButton:(id)sender {
+  [self dismissViewControllerAnimated:true completion:nil];
+
+}
 @end

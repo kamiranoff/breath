@@ -21,5 +21,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *exhaleStrengthLabel;
 @property (weak, nonatomic) IBOutlet UINavigationBar *navigation;
+- (IBAction)backButton:(id)sender;
 
 @end

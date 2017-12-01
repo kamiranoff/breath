@@ -15,5 +15,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLbl;
 @property (weak, nonatomic) IBOutlet UINavigationBar *navigation;
 - (IBAction)button:(id)sender;
+- (IBAction)backButton:(id)sender;
 
 @end

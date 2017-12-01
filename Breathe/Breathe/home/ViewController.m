@@ -28,8 +28,8 @@
   _exercicesTableView.allowsMultipleSelection = false;
 
   
-  exercises = @[@"Breathe in and out",@"Breathing in and vowels", @"Steady flow Line",@"Steady flow Line with Vowels", @"Emotions",@"Decibel feeback",@"decibel feeback with vowels"];
-  exercisesDescription = @[@"Inhale and exhale for the specified amount of time",@"Inhale and pronounce the vowel for the specified amount of time", @"Breath in and exhale at different strength", @"Breath in and pronounce the vowel for an amount of time ", @"Pronounces sentences with different emotions",@"Decibel feeback",@"decibel feeback with vowels"];
+  exercises = @[@"Breathe in and out",@"Breathing in and vowels", @"Steady flow Line",@"Steady flow Line with Vowels", @"Emotions",@"Pitch",@"Decibel feeback",@"decibel feeback with vowels"];
+  exercisesDescription = @[@"Inhale and exhale for the specified amount of time",@"Inhale and pronounce the vowel for the specified amount of time", @"Breath in and exhale at different strength", @"Breath in and pronounce the vowel for an amount of time ", @"Pronounces sentences with different emotions",@"Pitch",@"Decibel feeback",@"decibel feeback with vowels"];
 }
 
 
@@ -72,6 +72,8 @@
     [self performSegueWithIdentifier:@"SteadyFlowLineWithVowel" sender:nil];
   }else if([exercise isEqualToString:exercises[4]]){
     [self performSegueWithIdentifier:@"Emotions" sender:nil];
+  }else if([exercise isEqualToString:exercises[5]]){
+    [self performSegueWithIdentifier:@"Pitch" sender:nil];
   } else {
     [self performSegueWithIdentifier:@"Breathing" sender:nil];
 

@@ -237,5 +237,9 @@
   [pathLayer addAnimation:pathAnimation forKey:@"strokeEnd"];
 }
 
+- (IBAction)backButton:(id)sender {
+  [self dismissViewControllerAnimated:true completion:nil];
+
+}
 @end
 

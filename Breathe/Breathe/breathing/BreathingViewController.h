@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *inhaleTimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *exhaleTimeLabel;
 @property (nonatomic, strong) NSString * exerciceTitle;
+- (IBAction)backBtn:(id)sender;
 @property (weak, nonatomic) IBOutlet UINavigationBar *navigation;
 
 @end

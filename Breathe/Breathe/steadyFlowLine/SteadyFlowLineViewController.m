@@ -203,4 +203,8 @@ UIColor *exhaleBgColor;
   return YES;
 }
 
+- (IBAction)backButton:(id)sender {
+  [self dismissViewControllerAnimated:true completion:nil];
+
+}
 @end

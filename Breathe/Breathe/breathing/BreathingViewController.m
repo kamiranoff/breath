@@ -53,7 +53,6 @@
 
 - (void)onTickInhale
 {
-  // remainingCounts = remainingCounts - 1;
   if (--remainingCounts <= 0) {
     [self startTimerExhale:currentExhaleValue];
     self.view.backgroundColor = exhaleBgColor;
@@ -135,4 +134,7 @@
   [self startTimerInhale:currentInhaleValue];
 }
 
+- (IBAction)backBtn:(id)sender {
+  [self dismissViewControllerAnimated:true completion:nil];
+}
 @end

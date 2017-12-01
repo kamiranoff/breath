@@ -19,5 +19,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *exhaleVowelLabel;
 @property (nonatomic, strong) NSString * exerciceTitle;
 @property (weak, nonatomic) IBOutlet UINavigationBar *navigation;
+- (IBAction)backButton:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *exhaleVowel;
 @end

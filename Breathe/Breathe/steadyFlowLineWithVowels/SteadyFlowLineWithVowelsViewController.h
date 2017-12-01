@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *chart;
 @property (weak, nonatomic) IBOutlet UILabel *vowel;
 @property (weak, nonatomic) IBOutlet UINavigationBar *navigation;
+- (IBAction)backButton:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UILabel *exhaleStrengthLabel;
 @end
