@@ -28,8 +28,8 @@
   _exercicesTableView.allowsMultipleSelection = false;
 
   
-  exercises = @[@"Breathe in and out",@"Breathing in and vowels", @"Steady flow Line",@"Steady flow Line with Vowels", @"Emotions",@"Pitch",@"Decibel feeback",@"decibel feeback with vowels"];
-  exercisesDescription = @[@"Inhale and exhale for the specified amount of time",@"Inhale and pronounce the vowel for the specified amount of time", @"Breath in and exhale at different strength", @"Breath in and pronounce the vowel for an amount of time ", @"Pronounces sentences with different emotions",@"Pitch",@"Decibel feeback",@"decibel feeback with vowels"];
+  exercises = @[@"Breathe in and out",@"Breathing in and vowels", @"Steady flow Line",@"Steady flow Line with Vowels", @"Emotions",@"Pitch"];
+  exercisesDescription = @[@"Inhale and exhale for the specified amount of time",@"Inhale and pronounce the vowel for the specified amount of time", @"Breath in and exhale at different strength", @"Breath in and pronounce the vowel for an amount of time ", @"Pronounces sentences with different emotions",@"Say the vowel in different pitch of voice"];
 }
 
 
