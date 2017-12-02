@@ -33,6 +33,8 @@
     UIColor *blueColor;
     UIColor *purpleColor;
     UIColor *lilaColor;
+  int pitchExerciseIndex;
+  NSDictionary *exercises;
 }
 
 @end
@@ -44,7 +46,9 @@
     // Do any additional setup after loading the view.
 
     inhaleBgColor = [[UIColor alloc] initWithRed:2.0 / 255.0 green:132.0 / 255.0 blue:168.0 / 255.0 alpha:1.0];
-    NSDictionary *exercises = [JSONHelpers JSONFromFile:@"exercises"];
+    exercises = [JSONHelpers JSONFromFile:@"exercises"];
+  
+  pitchExerciseIndex = 1;
     pitchExercise = [exercises valueForKeyPath:@"vowelsWithColors.exercise1"];
     currentExerciseIndex = 0;
     [self displayNextExerciseValues:currentExerciseIndex];
@@ -225,14 +229,32 @@
 }
 
 - (void)onExerciseFinished {
-    currentExerciseIndex++;
+  NSString * pitchExercisePath = @"vowelsWithColors.exercise";
+  NSString * pitchExerciseFullPath=[pitchExercisePath stringByAppendingFormat:@"%d ",pitchExerciseIndex];
 
-    _colorsStackView.hidden = YES;
-    _lettersStackView.hidden = YES;
-    _inhileTimeLbl.hidden = NO;
-    _exhaleTimeLabel.hidden = NO;
-    _startButtonLbl.hidden = NO;
-    _vowelLbl.hidden = NO;
+  _colorsStackView.hidden = YES;
+  _lettersStackView.hidden = YES;
+  _inhileTimeLbl.hidden = NO;
+  _exhaleTimeLabel.hidden = NO;
+  _startButtonLbl.hidden = NO;
+  _vowelLbl.hidden = NO;
+
+  
+  if(currentExerciseIndex == pitchExercise.count - 1) {
+    
+    if(pitchExerciseIndex < 3) {
+      pitchExerciseIndex++;
+      pitchExerciseFullPath = [pitchExercisePath stringByAppendingFormat:@"%d",pitchExerciseIndex];
+      
+      pitchExercise = [exercises valueForKeyPath:pitchExerciseFullPath];
+      currentExerciseIndex = 0;
+    } else {
+      NSLog(@"exercise finished");
+      
+    }
+  } else {
+    currentExerciseIndex++;
+  }
 
     [self displayNextExerciseValues:currentExerciseIndex];
 }
