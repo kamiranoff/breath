@@ -148,9 +148,6 @@
 }
 
 -(void)displayVowel {
-  
-  NSLog(@"%d, %d, %@",remainingCountsForVowels, vowelsLength, vowels);
-  
   if (--remainingCountsForVowels <= 0) {
     [vowelTimer invalidate];
     _vowel.hidden = YES;

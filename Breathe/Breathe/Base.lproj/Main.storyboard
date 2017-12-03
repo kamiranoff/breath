@@ -44,13 +44,13 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="5LG-aY-Y2z"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uw8-cb-g8x">
                                                     <rect key="frame" x="15" y="11" width="345" height="30"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -202,7 +202,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o55-wG-2d4">
                                         <rect key="frame" x="0.0" y="190.5" width="375" height="95.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <color key="textColor" red="0.89646015580000005" green="0.92144343110000004" blue="0.92874710650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.61265588121569459" green="0.63038474619630414" blue="0.63680164124668437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABY-We-bXp">
@@ -381,10 +381,10 @@ Say the letter while the screen is red</string>
                                     <constraint firstAttribute="height" constant="461" id="08j-HR-io7"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, How are you?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcq-1u-6UA">
-                                <rect key="frame" x="16" y="459" width="343" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, How are you?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcq-1u-6UA">
+                                <rect key="frame" x="16" y="459" width="343" height="82"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="bj5-TO-H45"/>
+                                    <constraint firstAttribute="height" constant="82" id="bj5-TO-H45"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="highlightedColor"/>
@@ -418,7 +418,7 @@ Say the letter while the screen is red</string>
                             <constraint firstItem="rcq-1u-6UA" firstAttribute="top" secondItem="guD-y2-0ni" secondAttribute="bottom" constant="50" id="3Qp-7L-rVb"/>
                             <constraint firstItem="4da-qC-rpR" firstAttribute="leading" secondItem="xHr-qm-tSf" secondAttribute="leading" constant="16" id="4VV-Rb-Ou2"/>
                             <constraint firstItem="xHr-qm-tSf" firstAttribute="trailing" secondItem="rcq-1u-6UA" secondAttribute="trailing" constant="16" id="5uD-hA-pMy"/>
-                            <constraint firstItem="8xr-oX-TDw" firstAttribute="top" secondItem="rcq-1u-6UA" secondAttribute="bottom" constant="50" id="6Z0-Ny-pgi"/>
+                            <constraint firstItem="8xr-oX-TDw" firstAttribute="top" secondItem="rcq-1u-6UA" secondAttribute="bottom" constant="8" id="6Z0-Ny-pgi"/>
                             <constraint firstItem="xHr-qm-tSf" firstAttribute="trailing" secondItem="guD-y2-0ni" secondAttribute="trailing" constant="16" id="9hc-Mi-WeE"/>
                             <constraint firstItem="rOr-LR-plP" firstAttribute="leading" secondItem="xHr-qm-tSf" secondAttribute="leading" id="EM0-Lw-e83"/>
                             <constraint firstItem="rcq-1u-6UA" firstAttribute="leading" secondItem="xHr-qm-tSf" secondAttribute="leading" constant="16" id="GcV-8i-lln"/>
