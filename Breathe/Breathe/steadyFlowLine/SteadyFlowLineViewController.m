@@ -52,9 +52,17 @@ UIColor *exhaleBgColor;
   int nextExhaleValue = [self getCurrentExerciseValue:currentExerciseIndex key:@"exhale.duration"];
   int nextExhaleStrengthValue = [self getCurrentExerciseValue:currentExerciseIndex key:@"exhale.strength"];
 
-  _inhaleTimeLabel.text = [NSString stringWithFormat:@"Inhale time: %d seconds", nextInhaleValue];
-  _exhaleTimeLabel.text =  [NSString stringWithFormat:@"Exhale time: %d seconds", nextExhaleValue];
-  _exhaleStrengthLabel.text =  [NSString stringWithFormat:@"Exhale Strengh: %d", nextExhaleStrengthValue];
+  
+  NSString * exhaleValueToString = @"soft";
+  if(nextExhaleStrengthValue == 2) {
+    exhaleValueToString = @"normal";
+  } else if (nextExhaleStrengthValue == 3) {
+    exhaleValueToString = @"hard";
+  }
+     
+  _inhaleTimeLabel.text = [NSString stringWithFormat:@"Inhale for %d seconds", nextInhaleValue];
+  _exhaleTimeLabel.text =  [NSString stringWithFormat:@"Exhale for %d seconds", nextExhaleValue];
+  _exhaleStrengthLabel.text =  [NSString stringWithFormat:@"Exhale Strength: %@", exhaleValueToString];
 }
 
 - (void)onTickInhale {

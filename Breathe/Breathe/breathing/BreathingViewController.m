@@ -46,8 +46,8 @@
 -(void)displayNextExerciseValues {
   int nextInhaleValue = [self getCurrentExerciseValue:currentExerciseIndex key:@"inhale"];
   int nextExhaleValue = [self getCurrentExerciseValue:currentExerciseIndex key:@"exhale"];
-  _inhaleTimeLabel.text = [NSString stringWithFormat:@"Inhale time: %d seconds", nextInhaleValue];
-  _exhaleTimeLabel.text =  [NSString stringWithFormat:@"Exhale time: %d seconds", nextExhaleValue];
+  _inhaleTimeLabel.text = [NSString stringWithFormat:@"Inhale for %d seconds", nextInhaleValue];
+  _exhaleTimeLabel.text =  [NSString stringWithFormat:@"Exhale for %d seconds", nextExhaleValue];
   
 }
 

@@ -46,8 +46,8 @@
   int nextInhaleValue = [self getCurrentExerciseValue:currentExerciseIndex key:@"inhale"];
   int nextExhaleValue = [self getCurrentExerciseValue:currentExerciseIndex key:@"exhale"];
   NSString * nextExhaleVowel = [self getCurrentExerciseStringValue:currentExerciseIndex key:@"vowel"];
-  _inhaleTimeLabel.text = [NSString stringWithFormat:@"Inhale time: %d seconds", nextInhaleValue];
-  _exhaleTimeLabel.text =  [NSString stringWithFormat:@"Exhale time: %d seconds", nextExhaleValue];
+  _inhaleTimeLabel.text = [NSString stringWithFormat:@"Inhale for %d seconds", nextInhaleValue];
+  _exhaleTimeLabel.text =  [NSString stringWithFormat:@"Exhale for %d seconds", nextExhaleValue];
   _exhaleVowelLabel.text =  [NSString stringWithFormat:@"Vowel: %@", nextExhaleVowel];
   
 }
@@ -87,6 +87,7 @@
   _lblNumberOutlet.hidden = YES;
   _startBreathingLbl.hidden = NO;
   _exhaleNumberlbl.hidden = YES;
+  _exhaleVowel.hidden = YES;
   _navigation.hidden = NO;
   self.view.backgroundColor = [[UIColor alloc]initWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0];
   

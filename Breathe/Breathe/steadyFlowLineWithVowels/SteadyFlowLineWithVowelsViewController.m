@@ -40,7 +40,7 @@
   inhaleBgColor = [[UIColor alloc]initWithRed:2.0/255.0 green:132.0/255.0 blue:168.0/255.0 alpha:1.0];
   exhaleBgColor = [[UIColor alloc]initWithRed:218.0/255.0 green:37.0/255.0 blue:67.0/255.0 alpha:1.0];
   
-  exercises = [JSONHelpers JSONFromFile:@"exercises-sample"];
+  exercises = [JSONHelpers JSONFromFile:@"exercises"];
   
   steadyFlowLineExerciseIndex = 1;
   steadyFlowLineExercise = [exercises valueForKeyPath:@"steadyFlowLineWithVowels.exercise1"];
@@ -57,9 +57,16 @@
   int nextExhaleValue = [self getCurrentExerciseValue:currentExerciseIndex key:@"exhale.duration"];
   int nextExhaleStrengthValue = [self getCurrentExerciseValue:currentExerciseIndex key:@"exhale.strength"];
   
-  _inhaleTimeLabel.text = [NSString stringWithFormat:@"Inhale time: %d seconds", nextInhaleValue];
-  _exhaleTimeLabel.text =  [NSString stringWithFormat:@"Exhale time: %d seconds", nextExhaleValue];
-  _exhaleStrengthLabel.text =  [NSString stringWithFormat:@"Exhale Strengh: %d", nextExhaleStrengthValue];
+  NSString * exhaleValueToString = @"soft";
+  if(nextExhaleStrengthValue == 2) {
+    exhaleValueToString = @"normal";
+  } else if (nextExhaleStrengthValue == 3) {
+    exhaleValueToString = @"hard";
+  }
+  
+  _inhaleTimeLabel.text = [NSString stringWithFormat:@"Inhale for %d seconds", nextInhaleValue];
+  _exhaleTimeLabel.text =  [NSString stringWithFormat:@"Exhale for %d seconds", nextExhaleValue];
+  _exhaleStrengthLabel.text =  [NSString stringWithFormat:@"Vocal strength: %@", exhaleValueToString];
 }
 
 - (void)onTickInhale {
@@ -165,7 +172,6 @@
   _exhaleTimeLabel.hidden = YES;
   _exhaleStrengthLabel.hidden = YES;
   _navigation.hidden = YES;
-
   
   int currentInhaleValue = [self getCurrentExerciseValue:currentExerciseIndex key:@"inhale.duration"];
   currentExhaleValue = [self getCurrentExerciseValue:currentExerciseIndex key:@"exhale.duration"];

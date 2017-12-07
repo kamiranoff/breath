@@ -1,11 +1,11 @@
 {
 	"breathing": [
 		{
-			"inhale": 2,
-			"exhale": 4
+			"inhale": 3,
+			"exhale": 5
 		},
 		{
-			"inhale": 3,
+			"inhale": 1,
 			"exhale": 6
 		},
 		{
@@ -42,11 +42,21 @@
 			{
 				"inhale": {
 					"strength": 2,
+					"duration": 2
+				},
+				"exhale": {
+					"strength": 1,
+					"duration": 4
+				}
+			},
+			{
+				"inhale": {
+					"strength": 2,
+					"duration": 2
+				},
+				"exhale": {
+					"strength": 2,
 					"duration": 3
-				},
-				"exhale": {
-					"strength": 2,
-					"duration": 5
 				}
 			},
 			{
@@ -55,18 +65,8 @@
 					"duration": 4
 				},
 				"exhale": {
-					"strength": 2,
-					"duration": 6
-				}
-			},
-			{
-				"inhale": {
-					"strength": 2,
-					"duration": 4
-				},
-				"exhale": {
-					"strength": 2,
-					"duration": 8
+          "strength": 3,
+          "duration": 3
 				}
 			},
 			{
@@ -297,21 +297,21 @@
 			{
 				"inhale": {
 					"strength": 2,
-					"duration": 3
+					"duration": 2
 				},
 				"exhale": {
-					"strength": 2,
+					"strength": 1,
 					"duration": 5
 				}
 			},
 			{
 				"inhale": {
 					"strength": 2,
-					"duration": 4
+					"duration": 2
 				},
 				"exhale": {
 					"strength": 2,
-					"duration": 6
+					"duration": 5
 				}
 			},
 			{
@@ -2138,7 +2138,7 @@
 				
 			},
 			{
-				"inhale": 3,
+				"inhale": 2,
 				"vowel": "E",
 				"exhale": 3,
 				"strength": 2,
@@ -2149,7 +2149,7 @@
 				]
 			},
 			{
-				"inhale": 4,
+				"inhale": 2,
 				"vowel": "E",
 				"exhale": 3,
 				"strength": 2,
@@ -2160,14 +2160,16 @@
 				]
 			},
 			{
-				"inhale": 5,
+				"inhale": 3,
 				"vowel": "E",
-				"exhale": 3,
+				"exhale": 5,
 				"strength": 2,
 				"pitchColor": [
+					"green",
+					"yellow",
 					"pink",
-					"pink",
-					"pink"
+          "blue",
+          "green"
 				]
 			},
 			{
@@ -3024,10 +3026,17 @@
 		}
 	],
   "emotions": {
-    "happy":["How do you do?","Can I have a coffee, please?","What a pleasure meeting you!","Can you close the door?","What about an English breakfast?"],
-    "sad":["How do you do?","Can I have a coffee, please?","What a pleasure meeting you!","Can you close the door?","What about an English breakfast?"],
-    "curious":["How do you do?","Can I have a coffee, please?","What a pleasure meeting you!","Can you close the door?","What about an English breakfast?"],
-    "angry":["How do you do?","Can I have a coffee, please?","What a pleasure meeting you!","Can you close the door?","What about an English breakfast?"],
-    "scared":["How do you do?","Can I have a coffee, please?","What a pleasure meeting you!","Can you close the door?","What about an English breakfast?"],
+    "happy":["How do you do?","Can I have a coffee, please?","What a pleasure meeting you!","Can you close the door?","What about an English breakfast?","Cheers"],
+    "sad":["How do you do?","Can I have a coffee, please?","What a pleasure meeting you!","Can you close the door?","What about an English breakfast?","Cheers"],
+    "curious":["How do you do?","Can I have a coffee, please?","What a pleasure meeting you!","Can you close the door?","What about an English breakfast?","Cheers"],
+    "angry":["How do you do?","Can I have a coffee, please?","What a pleasure meeting you!","Can you close the door?","What about an English breakfast?","Cheers"],
+    "scared":["How do you do?","Can I have a coffee, please?","What a pleasure meeting you!","Can you close the door?","What about an English breakfast?","Cheers"],
+  },
+  "instruments": {
+    "drumsticks": ["k","kh"],
+    "hi-hat": ["kss", "tss", "t", "th"],
+    "kickdrum": ["brr","b","bf"],
+    "snare": ["ksh","pf"],
+    "cymbal": ["tsh","ksh"],
   }
 }

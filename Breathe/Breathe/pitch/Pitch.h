@@ -29,5 +29,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *blue;
 @property (weak, nonatomic) IBOutlet UILabel *purple;
 @property (weak, nonatomic) IBOutlet UILabel *lila;
+@property (weak, nonatomic) IBOutlet UIImageView *colorImageExplaination;
 
 @end

@@ -12,6 +12,7 @@
 		0A4F5BC91FB8CA780089B0CC /* JSONHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F5BC81FB8CA780089B0CC /* JSONHelpers.m */; };
 		0A4F5BCC1FB8CB270089B0CC /* exercises.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A4F5BCB1FB8CB270089B0CC /* exercises.json */; };
 		0A4F5BCF1FBA50B40089B0CC /* SteadyFlowLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F5BCE1FBA50B40089B0CC /* SteadyFlowLineViewController.m */; };
+		0A68C8971FD60D9F00D98947 /* Instruments.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A68C8961FD60D9F00D98947 /* Instruments.m */; };
 		0A860DCD1FC1DF3200639544 /* exercises-sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A860DCC1FC1DF3200639544 /* exercises-sample.json */; };
 		0AA5966A1FB896DC001D4D25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA596691FB896DC001D4D25 /* AppDelegate.m */; };
 		0AA5966D1FB896DC001D4D25 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA5966C1FB896DC001D4D25 /* ViewController.m */; };
@@ -58,6 +59,8 @@
 		0A4F5BCB1FB8CB270089B0CC /* exercises.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exercises.json; sourceTree = "<group>"; };
 		0A4F5BCD1FBA50B40089B0CC /* SteadyFlowLineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SteadyFlowLineViewController.h; sourceTree = "<group>"; };
 		0A4F5BCE1FBA50B40089B0CC /* SteadyFlowLineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SteadyFlowLineViewController.m; sourceTree = "<group>"; };
+		0A68C8951FD60D9F00D98947 /* Instruments.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Instruments.h; sourceTree = "<group>"; };
+		0A68C8961FD60D9F00D98947 /* Instruments.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Instruments.m; sourceTree = "<group>"; };
 		0A860DCC1FC1DF3200639544 /* exercises-sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "exercises-sample.json"; sourceTree = "<group>"; };
 		0AA596651FB896DC001D4D25 /* Breathe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breathe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA596681FB896DC001D4D25 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -124,6 +127,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A68C8981FD60DB000D98947 /* instruments */ = {
+			isa = PBXGroup;
+			children = (
+				0A68C8951FD60D9F00D98947 /* Instruments.h */,
+				0A68C8961FD60D9F00D98947 /* Instruments.m */,
+			);
+			name = instruments;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		0AA5965C1FB896DC001D4D25 = {
 			isa = PBXGroup;
 			children = (
@@ -149,8 +162,9 @@
 		0AA596671FB896DC001D4D25 /* Breathe */ = {
 			isa = PBXGroup;
 			children = (
-				0AB090F51FD1821E00817F7B /* pitch */,
 				0AB090F41FD180BC00817F7B /* assets */,
+				0A68C8981FD60DB000D98947 /* instruments */,
+				0AB090F51FD1821E00817F7B /* pitch */,
 				0AB090F01FD08E0400817F7B /* vowels */,
 				0AB090EF1FD08CDE00817F7B /* Emotions */,
 				0AB090EE1FD08CC600817F7B /* home */,
@@ -584,6 +598,7 @@
 				0A4F5BC91FB8CA780089B0CC /* JSONHelpers.m in Sources */,
 				0AB090F31FD08E1800817F7B /* Vowels.m in Sources */,
 				0AB090F81FD1823000817F7B /* Pitch.m in Sources */,
+				0A68C8971FD60D9F00D98947 /* Instruments.m in Sources */,
 				0AA596781FB896DC001D4D25 /* main.m in Sources */,
 				0A4F5BC71FB8B1230089B0CC /* BreathingViewController.m in Sources */,
 				0A4F5BC41FB8A28F0089B0CC /* TableViewCell.m in Sources */,
@@ -755,6 +770,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23C3Y8VELR;
 				INFOPLIST_FILE = Breathe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevinamiranoff.Breathe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -770,6 +786,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23C3Y8VELR;
 				INFOPLIST_FILE = Breathe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevinamiranoff.Breathe;
 				PRODUCT_NAME = "$(TARGET_NAME)";

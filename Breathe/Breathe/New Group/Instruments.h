@@ -1,14 +1,14 @@
 //
-//  EmotionsViewController.h
+//  Instruments.h
 //  Breathe
 //
-//  Created by Kevin Amiranoff on 30/11/2017.
+//  Created by Kevin Amiranoff on 04/12/2017.
 //  Copyright © 2017 Kevin Amiranoff. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface EmotionsViewController : UIViewController
+@interface Instruments : UIViewController
 @property (weak, nonatomic) IBOutlet UIImageView *picture;
 @property (weak, nonatomic) IBOutlet UILabel *sentence;
 @property (weak, nonatomic) IBOutlet UIButton *button;
@@ -17,5 +17,4 @@
 - (IBAction)button:(id)sender;
 - (IBAction)backButton:(id)sender;
 - (IBAction)extraBackButton:(id)sender;
-
 @end

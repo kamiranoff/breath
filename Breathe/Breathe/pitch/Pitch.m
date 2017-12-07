@@ -35,6 +35,7 @@
     UIColor *lilaColor;
   int pitchExerciseIndex;
   NSDictionary *exercises;
+    BOOL firstTimePress;
 }
 
 @end
@@ -45,6 +46,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
+  firstTimePress = NO;
+  _inhileTimeLbl.hidden = YES;
+  //    _exhaleTimeLabel.hidden = YES;
+  _vowelLbl.hidden = YES;
+  
     inhaleBgColor = [[UIColor alloc] initWithRed:2.0 / 255.0 green:132.0 / 255.0 blue:168.0 / 255.0 alpha:1.0];
     exercises = [JSONHelpers JSONFromFile:@"exercises"];
   
@@ -75,10 +81,10 @@
 
 - (void)displayNextExerciseValues:(int)exerciseIndex {
     int nextInhaleValue = [self getCurrentExerciseValue:exerciseIndex exercise:pitchExercise key:@"inhale"];
-    int nextExhaleValue = [self getCurrentExerciseValue:exerciseIndex exercise:pitchExercise key:@"exhale"];
+   // int nextExhaleValue = [self getCurrentExerciseValue:exerciseIndex exercise:pitchExercise key:@"exhale"];
     NSString *nextVowelValue = [self getCurrentExerciseStringValue:exerciseIndex exercise:pitchExercise key:@"vowel"];
-    _inhileTimeLbl.text = [NSString stringWithFormat:@"Inhale time: %d seconds", nextInhaleValue];
-    _exhaleTimeLabel.text = [NSString stringWithFormat:@"Exhale time: %d seconds", nextExhaleValue];
+    _inhileTimeLbl.text = [NSString stringWithFormat:@"Inhale for %d seconds", nextInhaleValue];
+   // _exhaleTimeLabel.text = [NSString stringWithFormat:@"Exhale time: %d seconds", nextExhaleValue];
     _vowelLbl.text = [NSString stringWithFormat:@"Vowel: %@", nextVowelValue];
 }
 
@@ -117,7 +123,7 @@
 
 - (void)startTimerExhale:(int)count {
     pitchCount = 0;
-    exhaleTimer = [NSTimer scheduledTimerWithTimeInterval:1.5
+    exhaleTimer = [NSTimer scheduledTimerWithTimeInterval:1
                                                    target:self
                                                  selector:@selector(onTickExhale)
                                                  userInfo:nil
@@ -238,6 +244,7 @@
   _exhaleTimeLabel.hidden = NO;
   _startButtonLbl.hidden = NO;
   _vowelLbl.hidden = NO;
+  _navigation.hidden = NO;
 
   
   if(currentExerciseIndex == pitchExercise.count - 1) {
@@ -260,13 +267,26 @@
 }
 
 - (IBAction)startButton:(id)sender {
+  
+  if(!firstTimePress) {
+    _colorImageExplaination.hidden = YES;
+    _inhileTimeLbl.hidden = NO;
+    //    _exhaleTimeLabel.hidden = YES;
+    _vowelLbl.hidden = NO;
+    firstTimePress = YES;
+    return;
+  }
+  
+  
+  
     [sender setHidden:true];
     _exerciseDescription.hidden = YES;
     _inhileTimeLbl.hidden = YES;
-    _exhaleTimeLabel.hidden = YES;
+//    _exhaleTimeLabel.hidden = YES;
     _vowelLbl.hidden = YES;
     _navigation.hidden = YES;
     _inhaleCountNumber.hidden = NO;
+  _colorImageExplaination.hidden = YES;
 
     int currentInhaleValue = [self getCurrentExerciseValue:currentExerciseIndex exercise:pitchExercise key:@"inhale"];
     currentExhaleValue = [self getCurrentExerciseValue:currentExerciseIndex exercise:pitchExercise key:@"exhale"];

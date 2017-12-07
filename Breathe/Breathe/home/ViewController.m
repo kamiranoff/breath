@@ -28,8 +28,23 @@
   _exercicesTableView.allowsMultipleSelection = false;
 
   
-  exercises = @[@"Breathe in and out",@"Breathing in and vowels", @"Steady flow Line",@"Steady flow Line with Vowels", @"Emotions",@"Pitch"];
-  exercisesDescription = @[@"Inhale and exhale for the specified amount of time",@"Inhale and pronounce the vowel for the specified amount of time", @"Breath in and exhale at different strength", @"Breath in and pronounce the vowel for an amount of time ", @"Pronounces sentences with different emotions",@"Say the vowel in different pitch of voice"];
+  exercises = @[
+                @"Breathing in and out",
+                @"Connection of breathing to voicing",
+                @"Volume control",
+                @"Volume control of Vowels",
+                @"Intonation",
+                @"Pitch exploration",
+                @"Beatboxing"
+                ];
+  exercisesDescription = @[
+                           @"Inhale and exhale following the timing",
+                           @"Inhale and say the vowels following the timing",
+                           @"Inhale and exhale following the steady flow line",
+                           @"Inhale and say the vowels following the steady flow line",
+                           @"Basic acting exercise to practise intonation",
+                           @"Explore the pitch of your voice",
+                           @"Imitate the sound of the instrument"];
 }
 
 
@@ -74,6 +89,8 @@
     [self performSegueWithIdentifier:@"Emotions" sender:nil];
   }else if([exercise isEqualToString:exercises[5]]){
     [self performSegueWithIdentifier:@"Pitch" sender:nil];
+  }else if([exercise isEqualToString:exercises[6]]){
+    [self performSegueWithIdentifier:@"Instruments" sender:nil];
   } else {
     [self performSegueWithIdentifier:@"Breathing" sender:nil];
 

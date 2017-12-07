@@ -8,6 +8,7 @@
 
 #import "EmotionsViewController.h"
 #import "JSONHelpers.h"
+#include <stdlib.h>
 
 @interface EmotionsViewController () {
   bool hasExerciseStarted;
@@ -16,6 +17,7 @@
   NSDictionary * emotionsExercise;
   int emotionsIndex;
   int sentenceIndex;
+  int sentencesCount;
   NSArray * emotions;
 }
 @end
@@ -33,6 +35,7 @@
   exercises = [JSONHelpers JSONFromFile:@"exercises"];
   emotionsExercise = [exercises objectForKey:@"emotions"];
   emotions = @[@"happy",@"sad",@"curious",@"angry",@"scared"];
+  sentencesCount = 6;
   emotionsIndex = 0;
   sentenceIndex = 0;
   
@@ -62,18 +65,19 @@
 }
 
 -(void) handleExerciseProgress {
-  if(sentenceIndex < emotions.count -1) {
+  if(sentenceIndex < sentencesCount -1) {
     sentenceIndex++;
+    int r = arc4random_uniform(sentencesCount -1);
+    _picture.image = [UIImage imageNamed:[self getEmotion:r]];
   } else {
     if(emotionsIndex < emotions.count -1) {
       emotionsIndex++;
       sentenceIndex = 0;
-      _picture.image = [UIImage imageNamed:[self getEmotion:emotionsIndex]];
-      
+      int r = arc4random_uniform(sentencesCount -1);
+      _picture.image = [UIImage imageNamed:[self getEmotion:r]];
     } else {
       [self handleExerciseFinished];
     }
- 
   }
 }
 
@@ -91,6 +95,7 @@
 - (IBAction)button:(id)sender {
   if(hasExerciseFinished) {
     [sender setTitle:@"Go back to Home Screen" forState:UIControlStateNormal];
+    [self dismissViewControllerAnimated:true completion:nil];
     return;
   }
   [sender setTitle:@"Next sentence" forState:UIControlStateNormal];
@@ -105,6 +110,11 @@
 }
 
 - (IBAction)backButton:(id)sender {
+  [self dismissViewControllerAnimated:true completion:nil];
+
+}
+
+- (IBAction)extraBackButton:(id)sender {
   [self dismissViewControllerAnimated:true completion:nil];
 
 }
