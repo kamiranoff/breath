@@ -2128,7 +2128,7 @@
 			{
 				"inhale": 2,
 				"vowel": "E",
-				"exhale": 3,
+				"exhale": 2,
 				"strength": 2,
 				"pitchColor": [
 					"green",
@@ -2140,23 +2140,12 @@
 			{
 				"inhale": 2,
 				"vowel": "E",
-				"exhale": 3,
+				"exhale": 2,
 				"strength": 2,
 				"pitchColor": [
 					"yellow",
 					"yellow",
 					"yellow"
-				]
-			},
-			{
-				"inhale": 2,
-				"vowel": "E",
-				"exhale": 3,
-				"strength": 2,
-				"pitchColor": [
-					"blue",
-					"blue",
-					"blue"
 				]
 			},
 			{
