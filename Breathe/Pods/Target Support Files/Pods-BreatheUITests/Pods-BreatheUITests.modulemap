@@ -1,6 +1,0 @@
-framework module Pods_BreatheUITests {
-  umbrella header "Pods-BreatheUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

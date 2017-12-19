@@ -1,6 +1,0 @@
-framework module Pods_Breathe {
-  umbrella header "Pods-Breathe-umbrella.h"
-
-  export *
-  module * { export * }
-}
